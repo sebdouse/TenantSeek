@@ -1,0 +1,1 @@
+C:\Users\Sebas\Documents\GitHub\TenantSeek\tenantseek.client\obj\Debug\tenantseek.client.esproj.CoreCompileInputs.cache

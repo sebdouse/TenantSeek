@@ -1,0 +1,6 @@
+@TenantSeek.Server_HostAddress = http://localhost:5239
+
+GET {{TenantSeek.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
