@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\mainnav.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\mainnav.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -46,17 +46,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.jsx",
               "RelativeDocumentMoniker": "tenantseek.client\\src\\App.jsx",
               "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.jsx",
               "RelativeToolTip": "tenantseek.client\\src\\App.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-08-07T16:35:36.635Z",
               "EditorCaption": ""
@@ -89,13 +89,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainNav.jsx",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\MainNav.jsx",
               "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\MainNav.jsx",
               "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\MainNav.jsx",
               "RelativeToolTip": "tenantseek.client\\src\\components\\MainNav.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwAUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-08-08T21:31:05.964Z",
               "EditorCaption": ""
