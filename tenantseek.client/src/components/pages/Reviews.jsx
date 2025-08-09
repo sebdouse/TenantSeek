@@ -1,17 +1,36 @@
-﻿import React from 'react';
+﻿import React, { useRef, useEffect } from 'react';
 import '../../App.css';
 
-
 function Reviews() {
+    const reviewRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new window.IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+        if (reviewRef.current) {
+            observer.observe(reviewRef.current);
+        }
+        return () => observer.disconnect();
+    }, []);
+
     return (
-        <>
-            <div className="align-center relative flex h-[100vh] w-[100vh] justify-center overflow-hidden">
-                <div className="absolute bottom-[20vh] h-[70vh] w-[90vh] rounded bg-[#FCF8FF]">
+        <div className="min-h-screen text-[#fcf8ff]">
+            <div className="relative flex min-h-screen flex-col items-center justify-center">
+                <div className="reviews-animate absolute top-[25vh] z-10 block" ref={reviewRef}>
+                    <h1 className="mb-4 text-6xl font-bold tracking-wider">TenantSeek Reviews</h1>
                 </div>
             </div>
-
-
-        </>
+        </div>
     );
 }
 

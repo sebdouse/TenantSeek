@@ -46,7 +46,7 @@ function LandingPage() {
     return (
         <>
             <div className="bg-linear-to-r/srgb min-h-screen from-[#7844E5] to-[#4B21C0] text-[#fcf8ff]">
-        <div className="relative flex min-h-screen flex-col items-center justify-center">
+            <div className="relative flex min-h-screen flex-col items-center justify-center">
             <div className="title-animate absolute top-[25vh] z-10 block" ref={landingRef[0]}>
                 <h1 className="mb-4 text-6xl font-bold tracking-wider">TenantSeek</h1>
                 <p className="mb-8">Your one-stop solution for tenant management.</p>

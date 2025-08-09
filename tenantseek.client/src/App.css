@@ -111,3 +111,14 @@ th, td {
         opacity: 1;
         transform: translateX(0);
     }
+
+.reviews-animate {
+    opacity: 0;
+    transform: translateY(100vh);
+    transition: opacity 1.5s ease, transform 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+    .reviews-animate.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
