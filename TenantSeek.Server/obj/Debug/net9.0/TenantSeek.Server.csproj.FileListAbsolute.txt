@@ -34,3 +34,14 @@ C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\obj\Debug\net9.0\re
 C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\obj\Debug\net9.0\TenantSeek.Server.pdb
 C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\obj\Debug\net9.0\TenantSeek.Server.genruntimeconfig.cache
 C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\obj\Debug\net9.0\ref\TenantSeek.Server.dll
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\obj\Debug\net9.0\TenantSeek.Server.sourcelink.json

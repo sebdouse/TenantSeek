@@ -1,15 +1,113 @@
-﻿@tailwind base;
-@tailwind components;
-@tailwind utilities;
+﻿@import "tailwindcss";
+
+@theme {
+            --primary: '#646cff',
+            --secondary: '#747bff',
+            --background: '#fcf8ff',
+            --text: '#213547'     
+}
 
 #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
     text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: linear-gradient(to right, #7844E5, #4B21C0);
 }
 
 th, td {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.navButton {
+    background-color: #5927e5;
+    border: 3px solid #31157D;
+    border-radius: 8px;
+    color: aliceblue;
+    align-content: center;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: black 0 2px;
+    transition: 0.3s;
+}
+    .navButton:hover {
+        background-color: #31157D;
+        border-color: #5927e5;
+        filter: drop-shadow();
+        box-shadow: black 1px 5px;
+        bottom: 6px;
+    }
+
+
+.information-box-1 {
+    display: flex;
+    margin: 15vh;
+    height: 45vh;
+    width: 60%;
+    border-radius: 1rem;
+    background-color: #9B89B3;
+    place-items:center;
+    position: relative;
+    opacity: 0;
+    transform: translateX(30vh);
+    transition: opacity 1.5s ease, transform 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.information-box-2 {
+    display: flex;
+    margin: 15vh;
+    height: 45vh;
+    width: 60%;
+    border-radius: 1rem;
+    background-color: #9B89B3;
+    place-items: center;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-30vh);
+    transition: opacity 1.5s ease, transform 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+
+.information-box-2.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.information-box-1.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.information-box-container {
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+}
+.title-animate {
+    opacity: 0;
+    transform: translateY(-30vh);
+    transition: opacity 1.5s ease, transform 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+    .title-animate.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+.bg-img-animate {
+    opacity: 0;
+    transform: translateY(-30vh);
+    transition: opacity 2.5s ease, transform 2.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+    .bg-img-animate.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }

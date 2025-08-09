@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\mainnav.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\mainnav.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\mainnav.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\mainnav.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|solutionrelative:tenantseek.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.server\\tenantseek.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -29,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|solutionrelative:tenantseek.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,19 +46,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.jsx",
+              "RelativeDocumentMoniker": "tenantseek.client\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.jsx",
+              "RelativeToolTip": "tenantseek.client\\src\\App.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-07T16:35:36.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\index.html",
+              "RelativeDocumentMoniker": "tenantseek.client\\index.html",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\index.html",
+              "RelativeToolTip": "tenantseek.client\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-09T16:04:59.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.css",
+              "RelativeDocumentMoniker": "tenantseek.client\\src\\App.css",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.css",
+              "RelativeToolTip": "tenantseek.client\\src\\App.css",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAGAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-07T17:34:30.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\.gitignore",
-              "RelativeDocumentMoniker": "tenantseek.client\\.gitignore",
-              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\.gitignore",
-              "RelativeToolTip": "tenantseek.client\\.gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-07T18:50:16.459Z",
+              "Title": "MainNav.jsx",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\MainNav.jsx",
+              "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\MainNav.jsx",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\MainNav.jsx",
+              "RelativeToolTip": "tenantseek.client\\src\\components\\MainNav.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwAUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-08T21:31:05.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\index.css",
+              "RelativeDocumentMoniker": "tenantseek.client\\src\\index.css",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\index.css",
+              "RelativeToolTip": "tenantseek.client\\src\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-08T14:42:34.678Z",
               "EditorCaption": ""
             },
             {
@@ -67,56 +123,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.css",
-              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.css",
-              "RelativeDocumentMoniker": "tenantseek.client\\src\\App.css",
-              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.css",
-              "RelativeToolTip": "tenantseek.client\\src\\App.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-07T17:34:30.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.jsx",
-              "RelativeDocumentMoniker": "tenantseek.client\\src\\App.jsx",
-              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.jsx",
-              "RelativeToolTip": "tenantseek.client\\src\\App.jsx",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-07T16:35:36.635Z",
+              "DocumentIndex": 5,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\vite.config.js",
+              "RelativeDocumentMoniker": "tenantseek.client\\vite.config.js",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\vite.config.js",
+              "RelativeToolTip": "tenantseek.client\\vite.config.js",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAACUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-08T14:44:23.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainNav.jsx",
-              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\MainNav.jsx",
-              "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\MainNav.jsx",
-              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\MainNav.jsx",
-              "RelativeToolTip": "tenantseek.client\\src\\components\\MainNav.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-07T17:36:32.262Z"
+              "DocumentIndex": 6,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\.gitignore",
+              "RelativeDocumentMoniker": "tenantseek.client\\.gitignore",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\.gitignore",
+              "RelativeToolTip": "tenantseek.client\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-07T18:50:16.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "tailwind.config.js",
-              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\tailwind.config.js",
-              "RelativeDocumentMoniker": "tenantseek.client\\tailwind.config.js",
-              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\tailwind.config.js",
-              "RelativeToolTip": "tenantseek.client\\tailwind.config.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-07T17:32:29.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "TenantSeek.Server.csproj",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\TenantSeek.Server.csproj",
               "RelativeDocumentMoniker": "TenantSeek.Server\\TenantSeek.Server.csproj",
@@ -128,19 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "TenantSeek.Server\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "TenantSeek.Server\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T16:30:47.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\Program.cs",
               "RelativeDocumentMoniker": "TenantSeek.Server\\Program.cs",
