@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\pages\\reviews.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\pages\\reviews.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\pages\\landingpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\pages\\landingpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -19,12 +23,8 @@
       "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\mainnav.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\pages\\landingpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\pages\\landingpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -54,24 +54,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Reviews.jsx",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\Reviews.jsx",
               "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\pages\\Reviews.jsx",
               "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\Reviews.jsx",
               "RelativeToolTip": "tenantseek.client\\src\\components\\pages\\Reviews.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-08-09T18:24:50.296Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "App.jsx",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.jsx",
               "RelativeDocumentMoniker": "tenantseek.client\\src\\App.jsx",
@@ -84,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainNav.jsx",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\MainNav.jsx",
               "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\MainNav.jsx",
@@ -97,33 +105,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "LandingPage.jsx",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\LandingPage.jsx",
               "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\pages\\LandingPage.jsx",
               "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\LandingPage.jsx",
               "RelativeToolTip": "tenantseek.client\\src\\components\\pages\\LandingPage.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-08-09T17:34:51.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "App.css",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.css",
               "RelativeDocumentMoniker": "tenantseek.client\\src\\App.css",
               "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.css",
               "RelativeToolTip": "tenantseek.client\\src\\App.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-08-07T17:34:30.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\.gitignore",
               "RelativeDocumentMoniker": "tenantseek.client\\.gitignore",
@@ -144,8 +152,7 @@
               "RelativeToolTip": "tenantseek.client\\index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-08-09T16:04:59.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-09T16:04:59.47Z"
             },
             {
               "$type": "Document",
@@ -157,16 +164,7 @@
               "RelativeToolTip": "tenantseek.client\\src\\index.css",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-08T14:42:34.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2025-08-08T14:42:34.678Z"
             },
             {
               "$type": "Document",
@@ -178,8 +176,7 @@
               "RelativeToolTip": "tenantseek.client\\vite.config.js",
               "ViewState": "AgIAAB8AAAAAAAAAAAAAACUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-08T14:44:23.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T14:44:23.994Z"
             },
             {
               "$type": "Document",
