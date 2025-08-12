@@ -18,7 +18,7 @@ function Reviews() {
             'Id': 1,
             'Role': 'Landlord',
             'About': 'Seb Douse',
-            'Rating': 5,
+            'Rating': 4,
             'Description': 'Incredible landlord, the best even. Best landlord in America, he really is, I would know.'
         },
         {
@@ -27,6 +27,13 @@ function Reviews() {
             'About': 'Jane Doe',
             'Rating': 3,
             'Description': 'Decent tenant, no troubles during lease but did not clean up well after moving out.'
+        },
+        {
+            'Id': 3,
+            'Role': 'Landlord',
+            'About': 'Alex Douse',
+            'Rating': 5,
+            'Description': 'Extremely responsible and friendly landlord. Always looks out for me and so thats why I always look out for him. His son is awesome as well.'
         }
     ];
 
@@ -49,7 +56,7 @@ function Reviews() {
                     <div className="flex h-full w-full items-center justify-start rounded">
                         <div className = "block h-full w-full">
                             <p className="flex">Description</p>
-                            <div className="reverse-shadow flex max-h-[12vh] min-h-[10vh] w-[40vw] rounded border border-black p-2">
+                            <div className="reverse-shadow flex max-h-[12vh] min-h-[10vh] w-[40vw] rounded border border-black bg-[#fcf8ff] p-2">
                                 <p>{desc}</p>
                             </div>
                         </div>
@@ -89,7 +96,7 @@ function Reviews() {
             <div className="relative flex min-h-screen flex-col items-center justify-center">
                 <div className="reviews-animate absolute top-[4vh] z-30 block" ref={reviewRef}>
                     <div className="main-container">
-                        <form className="absolute z-20 flex h-[5rem] w-full justify-evenly border-b border-b-black p-5 text-black">
+                        <form className="absolute z-20 flex h-[12.5%] w-full justify-evenly border-b border-b-black p-5 text-black">
                             <input className="rounded-[2rem] border border-black pl-3" type="text" placeholder="Search by name:" />
                             <div className="inline-flex items-center gap-5">
                                 <p className="font-semibold">About:</p>

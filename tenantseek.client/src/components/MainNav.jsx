@@ -15,8 +15,7 @@ function MainNav() {
         </nav>
         <div
             name="sticky-navbar-interceptor"
-            className="pointer-events-none absolute left-0 top-[100vh] -z-10 h-px w-full"
-            aria-hidden="true"/>
+            className=" overlay"/>
         </>
     );
 }

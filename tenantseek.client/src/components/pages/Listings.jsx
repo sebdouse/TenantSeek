@@ -1,10 +1,122 @@
-import React from 'react';
+﻿import React, { useRef, useEffect, useState } from 'react';
 import '../../App.css';
 
+var ListingsData = [
+    {
+        'Owner': 'Seb Douse',
+        'Address': '24 Canon Woods Way, TN24 9QY, Ashford, Kent',
+        'TypeOfPurchase': 'Buy-To-Own',
+        'Price': 700000,
+        'Bedrooms': 4,
+        'Bathrooms': 4,
+        'Description': "A nice picteresque house with plenty of space, open plan living room and professional kitchen with a great view of the Wye Hills and surrounding wildlife",
+        'Images': ["img1.jpg", "img2.jpg", "img3.jpg"]
+    },
+    {
+        'Owner': 'Seb Douse',
+        'Address': '24 Canon Woods Way, TN24 9QY, Ashford, Kent',
+        'TypeOfPurchase': 'Buy-To-Own',
+        'Price': 650000,
+        'Bedrooms': 4,
+        'Bathrooms': 4,
+        'Description': "A nice picteresque house with plenty of space, open plan living room and professional kitchen with a great view of the Wye Hills and surrounding wildlife",
+        'Images': ["img1.jpg", "img2.jpg", "img3.jpg"]
+    },
+    {
+        'Owner': 'Seb Douse',
+        'Address': '24 Canon Woods Way, TN24 9QY, Ashford, Kent',
+        'TypeOfPurchase': 'Rental',
+        'Price': 1200,
+        'Bedrooms': 4,
+        'Bathrooms': 4,
+        'Description': "",
+        'Images': ["img1.jpg", "img2.jpg", "img3.jpg"]
+    },
+    {
+        'Owner': 'Seb Douse',
+        'Address': '24 Canon Woods Way, TN24 9QY, Ashford, Kent',
+        'TypeOfPurchase': 'Rental',
+        'Price': 900,
+        'Bedrooms': 4,
+        'Bathrooms': 4,
+        'Description': "A nice picteresque house with plenty of space, open plan living room and professional kitchen with a great view of the Wye Hills and surrounding wildlife",
+        'Images': ["img1.jpg", "img2.jpg", "img3.jpg"]
+    },
 
+]
 function Listings() {
+    
+    const listingRef = useRef(null)
+    useEffect(() => {
+        const observer = new window.IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+        if (listingRef.current) {
+            observer.observe(listingRef.current);
+        }
+        return () => observer.disconnect();
+    }, []);
+
+    //Listings info card
+    function ListingsCard(props) {
+        return (
+            <div className="info-card overflow-hidden text-black">
+                <div className="flex h-full w-full">
+                    <div className="block h-full w-[40%]">
+                        <h1 className="mb-1 flex justify-start text-[1rem]"><b>Address:</b> {props.Address}</h1>
+                        <h1 className="flex justify-start"> <b>Owner:</b> {props.Owner}</h1>
+                        <div className="reverse-shadow mt-[1.5%] h-[60%] w-[100%] overflow-hidden rounded border border-black bg-[#fcf8ff] p-2">
+                            <p className="flex">Description: {props.Description}</p>
+                        </div>
+                    </div>
+                    <div className="ml-[5%] flex h-full w-[50%]">
+                        <div className="collage h-[100%] w-[66%] shadow">
+                            <div className="c-img-1" />
+                            <div className="c-img-2" />
+                            <div className="c-img-3" />
+                            <div className="c-img-4" />
+                        </div>
+                        <div className="flex flex-col justify-evenly pl-5">
+                            <p className="text-[1.3rem]">Price: £{props.Price} {props.TypeOfPurchase == "Rental" ? "p/m" : ""}</p>
+                            <p>Bathrooms: {props.Bathrooms}</p>
+                            <p>Bedrooms: {props.Bedrooms}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+
+
     return (
-    <></>
+        <>
+            <div className="min-h-screen text-[#fcf8ff]">
+                <div className="relative flex min-h-screen flex-col items-center justify-center">
+                    <div className="reviews-animate absolute top-[4vh] z-30 block" ref={listingRef}>
+                        <div className="main-container">
+                            <form className="absolute flex h-[12.5%] w-full justify-start p-5 text-black">
+                                <input className="z-20 ml-[20%] w-[20%] rounded-[2rem] border border-black pl-3" type="text" placeholder="Search by name or address:" />
+                            </form>
+                            <div className="sub-container z-10">
+                                {ListingsData.map((r, i) => (
+                                    <ListingsCard key={i} Owner={r.Owner} Address={r.Address} Price={r.Price} Bedrooms={r.Bedrooms} Bathrooms={r.Bathrooms} Description={r.Description} Images={r.Images} TypeOfPurchase={r.TypeOfPurchase} />
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
 
