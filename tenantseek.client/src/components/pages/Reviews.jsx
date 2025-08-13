@@ -92,7 +92,7 @@ function Reviews() {
     }
 
     return (
-        <div className="min-h-screen text-[#fcf8ff]">
+        <div className="mt-25 min-h-screen text-[#fcf8ff]">
             <div className="relative flex min-h-screen flex-col items-center justify-center">
                 <div className="reviews-animate absolute top-[4vh] z-30 block" ref={reviewRef}>
                     <div className="main-container">

@@ -86,7 +86,7 @@ function Listings() {
                             <div className="c-img-4" />
                         </div>
                         <div className="flex flex-col justify-evenly pl-5">
-                            <p className="text-[1.3rem]">Price: £{props.Price} {props.TypeOfPurchase == "Rental" ? "p/m" : ""}</p>
+                            <p className="text-[125%]">Price: £{props.Price} {props.TypeOfPurchase == "Rental" ? "p/m" : ""}</p>
                             <p>Bathrooms: {props.Bathrooms}</p>
                             <p>Bedrooms: {props.Bedrooms}</p>
                         </div>
@@ -100,7 +100,7 @@ function Listings() {
 
     return (
         <>
-            <div className="min-h-screen text-[#fcf8ff]">
+            <div className="mt-25 min-h-screen text-[#fcf8ff]">
                 <div className="relative flex min-h-screen flex-col items-center justify-center">
                     <div className="reviews-animate absolute top-[4vh] z-30 block" ref={listingRef}>
                         <div className="main-container">

@@ -155,7 +155,42 @@ th, td {
     background-color: #fcf8ff;
 }
 
+.form-button {
+    border-radius: 2rem;
+    background-color: #FCF8FF;
+    align-self: center;
+    width: 30%;
+    height: 12.5%;
+}
 
+.landlord-login-bg {
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+    .landlord-login-bg::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url('C:\Users\Sebas\Documents\GitHub\TenantSeek\tenantseek.client\public\LoginBackground.jpeg') center center no-repeat;
+        background-size: cover;
+        filter: blur(8px);
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.85;
+    }
+
+    .landlord-login-bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(30, 20, 60, 0.45); /* Adjust color and opacity as needed */
+        z-index: 1;
+        pointer-events: none;
+    }
 /*-----------Animated Elements-----------*/
 
 .information-box-1 {
@@ -202,6 +237,18 @@ th, td {
     background-color: antiquewhite;
     border-radius: 1rem;
 }
+
+.help-animate {
+    opacity: 0;
+    transform: translateX(-30vh);
+    transition: opacity 1.5s ease, transform 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+    .help-animate.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
 .title-animate {
     opacity: 0;
     transform: translateY(-30vh);
@@ -234,3 +281,4 @@ th, td {
         opacity: 1;
         transform: translate(0vh);
     }
+

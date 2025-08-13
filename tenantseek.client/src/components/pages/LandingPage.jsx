@@ -44,7 +44,7 @@ function LandingPage() {
     }, [landingRef]);
 
     return (
-        <>
+        <div className="mt-20">
             <div className="bg-linear-to-r/srgb min-h-screen from-[#7844E5] to-[#4B21C0] text-[#fcf8ff]">
             <div className="relative flex min-h-screen flex-col items-center justify-center">
             <div className="title-animate absolute top-[25vh] z-10 block" ref={landingRef[0]}>
@@ -74,7 +74,7 @@ function LandingPage() {
                 </div>
             </div>
             
-        </>
+        </div>
 
     );
 }
