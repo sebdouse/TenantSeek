@@ -47,12 +47,20 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '^/weatherforecast': {
+            '^/api/reviews': {
+                target,
+                secure: false
+            },
+            '^/api/listings': {
+                target,
+                secure: false
+            },
+            '^/api/users': {
                 target,
                 secure: false
             }
         },
-        port: parseInt(env.DEV_SERVER_PORT || '58659'),
+        port: parseInt(env.DEV_SERVER_PORT || '58659'), 
         https: {
             key: fs.readFileSync(keyFilePath),
             cert: fs.readFileSync(certFilePath),

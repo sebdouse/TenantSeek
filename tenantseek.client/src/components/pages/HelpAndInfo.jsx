@@ -28,9 +28,9 @@ function HelpAndInfo() {
         <>
             <div ref={helpRef[0]} className="help-animate mb-[10vh] mt-[20vh] flex h-full w-full flex-col items-center justify-center gap-20">
                 <div>
-                    <h1 className="flex justify-start p-5 font-semibold text-[3rem] text-white">Privacy Policy</h1>
+                    <h1 className="flex justify-start p-5 font-semibold text-[3rem] text-white">Privacy Policy & GDPR</h1>
                     <div className=" flex h-[35vh] w-[85vw] rounded-[1rem] bg-white p-5">
-                        <p>I promise to not steal all your data and delete it when not used anymore and such</p>
+                        <p>I promise to not steal all your data and delete it when not used anymore and such.<br/>- After 12 months of inactivity, your account is deleted and after a sale has been made, the listing is then permanently deleted from the database</p>
                     </div>
                 </div>
                 <div>

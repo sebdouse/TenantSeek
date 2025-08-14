@@ -174,7 +174,7 @@ th, td {
         content: "";
         position: absolute;
         inset: 0;
-        background: url('C:\Users\Sebas\Documents\GitHub\TenantSeek\tenantseek.client\public\LoginBackground.jpeg') center center no-repeat;
+        background: url('/LoginBackground.jpeg') center center no-repeat;
         background-size: cover;
         filter: blur(8px);
         z-index: 0;
