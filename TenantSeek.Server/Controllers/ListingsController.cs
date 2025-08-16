@@ -2,17 +2,67 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TenantSeek.Server.Models;
+using TenantSeek.Server.Models.DTO;
+using FuzzySharp;
 
 namespace TenantSeek.Server.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class ListingsController : ControllerBase
     {
         private DbContextModel dbContext;
         public ListingsController(DbContextModel dbContext)
         {
             this.dbContext = dbContext;
+        }
+        [HttpGet]
+        public IActionResult GetAllListings()
+        {
+            var listings = dbContext.Listings
+                .Include(r => r.User)
+                .Select(l => new ListingsDTO
+                {
+                    ListingId = l.ListingId,
+                    Address = l.Address,
+                    Type = l.Type,
+                    Description = l.Description,
+                    Price = l.Price,
+                    NumBathrooms = l.NumBathrooms,
+                    NumBedrooms = l.NumBedrooms,
+                    Username = l.User.Username
+                })
+                .ToList();
+
+            return Ok(listings);
+        }
+
+        [HttpGet, Route("GetListingsBySearch/{query}")]
+        public IActionResult GetListingsBySearch(string query)
+        {
+            var listings = dbContext.Listings
+                .Include(r => r.User.Username)
+                .Select(l => new ListingsDTO
+                {
+                    ListingId = l.ListingId,
+                    Address = l.Address,
+                    Type = l.Type,
+                    Description = l.Description,
+                    Price = l.Price,
+                    NumBathrooms = l.NumBathrooms,
+                    NumBedrooms = l.NumBedrooms,
+                    Username = l.User.Username
+                })
+                .AsEnumerable()
+                .Where(r =>
+                (
+                    Fuzz.PartialRatio(query, r.Address) > 55 ||
+                    Fuzz.PartialRatio(query, r.Username) > 55 ||
+                    r.Address.Contains(query) ||
+                    r.Username.Contains(query)
+                ));
+            foreach (var item in listings) { }
+            return Ok();
         }
 
     }

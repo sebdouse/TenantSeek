@@ -15,11 +15,11 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.WithOrigins("https://localhost:58659/", "http://localhost:5173/", "https://localhost:7013") // <-- your React/Vue/etc. URL
-                  .AllowAnyHeader()
-                  .AllowAnyMethod()
-                  .AllowCredentials();
-            //policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+            //policy.WithOrigins("https://localhost:58659/", "http://localhost:5173/", "https://localhost:7013") // <-- your React/Vue/etc. URL
+            //      .AllowAnyHeader()
+            //      .AllowAnyMethod()
+            //      .AllowCredentials();
+            policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
 
         });
 });

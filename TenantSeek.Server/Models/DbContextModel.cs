@@ -4,8 +4,8 @@
     public class DbContextModel: DbContext
     {
         public DbContextModel(DbContextOptions<DbContextModel> options) : base(options) { }
-        public DbSet<UserModel> Users { get; set; }
-        public DbSet<ListingsModel> Listings { get; set; }
-        public DbSet<ReviewModel> Reviews { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Listings> Listings { get; set; }
+        public DbSet<Reviews> Reviews { get; set; }
     }
 }

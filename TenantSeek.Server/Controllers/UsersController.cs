@@ -31,7 +31,7 @@ namespace TenantSeek.Server.Controllers
             }
             //IMPLEMENT COOKIE AUTH HERE
 
-            return Ok(User.Id);
+            return Ok(User.UserId);
         }
 
         

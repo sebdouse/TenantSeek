@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mZZbxadGXjk=",
+  "dgSpecHash": "Zt70gZdwl5I=",
   "success": true,
   "projectFilePath": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\TenantSeek.Server.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Sebas\\.nuget\\packages\\fastendpoints.attributes\\7.0.1\\fastendpoints.attributes.7.0.1.nupkg.sha512",
     "C:\\Users\\Sebas\\.nuget\\packages\\fastendpoints.messaging.core\\7.0.1\\fastendpoints.messaging.core.7.0.1.nupkg.sha512",
     "C:\\Users\\Sebas\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\Sebas\\.nuget\\packages\\fuzzysharp\\2.0.2\\fuzzysharp.2.0.2.nupkg.sha512",
     "C:\\Users\\Sebas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Sebas\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.7\\microsoft.aspnetcore.openapi.9.0.7.nupkg.sha512",
     "C:\\Users\\Sebas\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\9.0.8\\microsoft.aspnetcore.spaproxy.9.0.8.nupkg.sha512",

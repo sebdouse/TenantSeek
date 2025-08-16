@@ -1,50 +1,35 @@
 ﻿import React, { useRef, useEffect, useState } from 'react';
 import '../../App.css';
 
-var ListingsData = [
-    {
-        'Owner': 'Seb Douse',
-        'Address': '24 Canon Woods Way, TN24 9QY, Ashford, Kent',
-        'TypeOfPurchase': 'Buy-To-Own',
-        'Price': 700000,
-        'Bedrooms': 4,
-        'Bathrooms': 4,
-        'Description': "A nice picteresque house with plenty of space, open plan living room and professional kitchen with a great view of the Wye Hills and surrounding wildlife",
-        'Images': ["img1.jpg", "img2.jpg", "img3.jpg"]
-    },
-    {
-        'Owner': 'Seb Douse',
-        'Address': '24 Canon Woods Way, TN24 9QY, Ashford, Kent',
-        'TypeOfPurchase': 'Buy-To-Own',
-        'Price': 650000,
-        'Bedrooms': 4,
-        'Bathrooms': 4,
-        'Description': "A nice picteresque house with plenty of space, open plan living room and professional kitchen with a great view of the Wye Hills and surrounding wildlife",
-        'Images': ["img1.jpg", "img2.jpg", "img3.jpg"]
-    },
-    {
-        'Owner': 'Seb Douse',
-        'Address': '24 Canon Woods Way, TN24 9QY, Ashford, Kent',
-        'TypeOfPurchase': 'Rental',
-        'Price': 1200,
-        'Bedrooms': 4,
-        'Bathrooms': 4,
-        'Description': "",
-        'Images': ["img1.jpg", "img2.jpg", "img3.jpg"]
-    },
-    {
-        'Owner': 'Seb Douse',
-        'Address': '24 Canon Woods Way, TN24 9QY, Ashford, Kent',
-        'TypeOfPurchase': 'Rental',
-        'Price': 900,
-        'Bedrooms': 4,
-        'Bathrooms': 4,
-        'Description': "A nice picteresque house with plenty of space, open plan living room and professional kitchen with a great view of the Wye Hills and surrounding wildlife",
-        'Images': ["img1.jpg", "img2.jpg", "img3.jpg"]
-    },
 
-]
 function Listings() {
+    const [listingsData, setListingsData] = useState([])
+    const API_URL = import.meta.env.VITE_API_URL;
+    useEffect(() => {
+
+        const getListings = async () => {
+            try {
+                const response = await fetch(`${API_URL}/api/listings`)
+                const data = await response.json()
+                setListingsData(data.map((r) => (
+                    {
+                        'Owner': r.Username,
+                        'Address': r.Address,
+                        'Price': r.Price,
+                        'Bedrooms': r.NumBedrooms,
+                        'Bathrooms': r.NumBathrooms,
+                        'Description': r.Description,
+                        'Images': '', //Will Implement Later with FileTables
+                        'TypeOfPurchase': r.Type
+                    }
+                )));
+            }   
+            catch (e) {
+                console.log("Error" + e)
+                }
+        }
+        getListings()
+    }, [])
     
     const listingRef = useRef(null)
     useEffect(() => {
@@ -108,8 +93,17 @@ function Listings() {
                                 <input className="z-20 ml-[20%] w-[20%] rounded-[2rem] border border-black pl-3" type="text" placeholder="Search by name or address:" />
                             </form>
                             <div className="sub-container z-10">
-                                {ListingsData.map((r, i) => (
-                                    <ListingsCard key={i} Owner={r.Owner} Address={r.Address} Price={r.Price} Bedrooms={r.Bedrooms} Bathrooms={r.Bathrooms} Description={r.Description} Images={r.Images} TypeOfPurchase={r.TypeOfPurchase} />
+                                {listingsData.map((r, i) => (
+                                    <ListingsCard key={i}
+                                        Owner={r.Owner}
+                                        Address={r.Address}
+                                        Price={r.Price}
+                                        Bedrooms={r.Bedrooms}
+                                        Bathrooms={r.Bathrooms}
+                                        Description={r.Description}
+                                        Images={r.Images}
+                                        TypeOfPurchase={r.TypeOfPurchase}
+                                    />
                                 ))}
                             </div>
                         </div>

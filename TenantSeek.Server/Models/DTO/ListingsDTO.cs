@@ -1,14 +1,14 @@
-﻿namespace TenantSeek.Server.Models
+﻿namespace TenantSeek.Server.Models.DTO
 {
-    public class ListingsModel
+    public class ListingsDTO
     {
-        public int ListingID { get; set; }
-        public int UserID { get; set; }
+        public int ListingId { get; set; }
         public string Address { get; set; }
         public string Type { get; set; }
         public string Description { get; set; }
         public int Price { get; set; }
         public int NumBathrooms { get; set; }
         public int NumBedrooms { get; set; }
+        public string Username { get; set; }
     }
 }

@@ -57,8 +57,8 @@ th, td {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 190vh;
-    max-width: 190vh;
+    width: 90vw;
+    max-width: 90vw;
     height: 80vh;
     background-color: #fcf8ff;
     border-radius: 2rem;
@@ -74,7 +74,7 @@ th, td {
     border-radius: 2rem;
     align-items: center;
     gap: 2vh;
-    width: 180vh;
+    width: 85vw;
     height: 86%;
     max-height: 86%;
     padding: 1vh;
@@ -87,7 +87,7 @@ th, td {
     display: flex;
     border: 2px solid black;
     border-radius: 2rem;
-    width: 160vh;
+    width: 70vw;
     height: 20vh;
     padding: 1rem;
     margin: 1vh;
