@@ -2,9 +2,36 @@
 import '../../App.css';
 import { useState, useRef, useEffect } from 'react'
 
+
 function LandingPage() {
     const landingRef = [useRef(null), useRef(null), useRef(null)];
     const boxRefs = [useRef(null), useRef(null), useRef(null)];
+    const [connectionSuccess, setConnectionSuccess] = useState(false)
+
+    useEffect(() => {
+        const apiUrl = import.meta.env.VITE_API_URL;
+
+        if (!apiUrl) {
+            setConnectionSuccess(false);
+            return;
+        }
+
+        const checkConnection = async () => {
+            try {
+                const response = await fetch(`${apiUrl}/api/users/TestConn`);
+                if (response.ok) {
+                    setConnectionSuccess(true);
+                } else {
+                    setConnectionSuccess(false);
+                }
+            } catch (error) {
+                setConnectionSuccess(false);
+                console.log("Error /////  " + error)
+            }
+        };
+
+        checkConnection();
+    }, [])
 
     useEffect(() => {
         const observer = new window.IntersectionObserver(
@@ -73,7 +100,7 @@ function LandingPage() {
                     <div className="information-box-container" style={{ left: '10%' }} ></div>
                 </div>
             </div>
-            
+            <p>{connectionSuccess ? "Connection successful" : "Connection not Found"}</p>
         </div>
 
     );

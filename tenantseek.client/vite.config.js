@@ -47,23 +47,13 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '^/api/reviews': {
-                target,
-                secure: false
-            },
-            '^/api/listings': {
-                target,
-                secure: false
-            },
-            '^/api/users': {
-                target,
-                secure: false
-            }
-        },
+            '/api': 'http://localhost:7013'
+        }
+    },
         port: parseInt(env.DEV_SERVER_PORT || '58659'), 
         https: {
             key: fs.readFileSync(keyFilePath),
             cert: fs.readFileSync(certFilePath),
         }
     }
-})
+)

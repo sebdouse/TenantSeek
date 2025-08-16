@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Azure.Identity;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TenantSeek.Server.Models;
 
@@ -14,10 +15,25 @@ namespace TenantSeek.Server.Controllers
             this.dbContext = dbContext;
         }
 
-        [HttpGet]
+        [HttpGet, Route("TestConn")]
         public IActionResult TestConn()
         {
             return Ok();
         }
+
+        [HttpGet]
+        public IActionResult Login(string username, string password)
+        {
+            var User = dbContext.Users.FirstOrDefault((u) => (u.Username == username && u.Password == password));
+            if (User == null)
+            {
+                return BadRequest();
+            }
+            //IMPLEMENT COOKIE AUTH HERE
+
+            return Ok(User.Id);
+        }
+
+        
     }
 }
