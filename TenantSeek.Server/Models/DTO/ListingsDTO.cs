@@ -10,5 +10,6 @@
         public int NumBathrooms { get; set; }
         public int NumBedrooms { get; set; }
         public string Username { get; set; }
+        public int UserID { get; set; }
     }
 }

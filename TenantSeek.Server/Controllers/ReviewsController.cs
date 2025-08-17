@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using TenantSeek.Server.Models;
 
@@ -38,9 +39,16 @@ namespace TenantSeek.Server.Controllers
         public IActionResult GetReviewsByName(string name) //Make it so the name only has to be partially right to appear on the search
         {
             var reviews = dbContext.Reviews.Where(r => r.Name == name).ToList();
-            logger.LogInformation("Found {Count} reviews for name: {Name}", reviews.Count, name);
             return Ok(reviews);
         }
+
+        [HttpGet, Route("GetReviewsByID/{id}")]
+        public IActionResult GetReviewsByID(int id)
+        {
+            var reviews = dbContext.Reviews.Where(r => r.UserId == id).OrderByDescending(r => r.Rating).ToList();
+            return Ok(reviews);
+        }
+
 
     }
 }

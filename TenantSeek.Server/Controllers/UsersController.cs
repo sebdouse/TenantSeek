@@ -21,10 +21,10 @@ namespace TenantSeek.Server.Controllers
             return Ok();
         }
 
-        [HttpGet]
-        public IActionResult Login(string username, string password)
+        [HttpPost, Route("Login")]
+        public IActionResult Login([FromBody] LoginRequest request)
         {
-            var User = dbContext.Users.FirstOrDefault((u) => (u.Username == username && u.Password == password));
+            var User = dbContext.Users.FirstOrDefault((u) => (u.Username == request.Username && u.Password == request.Password));
             if (User == null)
             {
                 return BadRequest();

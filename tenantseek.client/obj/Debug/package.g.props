@@ -12,6 +12,7 @@
     <PackageJsonDependenciesTailwindcssForms Condition="$(PackageJsonDependenciesTailwindcssForms) == ''">^0.5.10</PackageJsonDependenciesTailwindcssForms>
     <PackageJsonDependenciesTailwindcssTypography Condition="$(PackageJsonDependenciesTailwindcssTypography) == ''">^0.5.16</PackageJsonDependenciesTailwindcssTypography>
     <PackageJsonDependenciesTailwindcssVite Condition="$(PackageJsonDependenciesTailwindcssVite) == ''">^4.1.11</PackageJsonDependenciesTailwindcssVite>
+    <PackageJsonDependenciesBcrypt Condition="$(PackageJsonDependenciesBcrypt) == ''">^6.0.0</PackageJsonDependenciesBcrypt>
     <PackageJsonDependenciesPostcss Condition="$(PackageJsonDependenciesPostcss) == ''">^8.5.6</PackageJsonDependenciesPostcss>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^19.1.1</PackageJsonDependenciesReact>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^19.1.1</PackageJsonDependenciesReactDom>

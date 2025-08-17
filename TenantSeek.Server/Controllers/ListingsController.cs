@@ -41,7 +41,7 @@ namespace TenantSeek.Server.Controllers
         public IActionResult GetListingsBySearch(string query)
         {
             var listings = dbContext.Listings
-                .Include(r => r.User.Username)
+                .Include(r => r.User)
                 .Select(l => new ListingsDTO
                 {
                     ListingId = l.ListingId,
@@ -61,8 +61,31 @@ namespace TenantSeek.Server.Controllers
                     r.Address.Contains(query) ||
                     r.Username.Contains(query)
                 ));
-            foreach (var item in listings) { }
-            return Ok();
+            
+            return Ok(listings);
+        }
+
+        [HttpGet, Route("GetListingsByID/{id}")]
+        public IActionResult GetListingsByID(int id)
+        {
+            var reviews = dbContext.Listings
+                .Include(r => r.User)
+                .Select(l => new ListingsDTO
+                {
+                    ListingId = l.ListingId,
+                    Address = l.Address,
+                    Type = l.Type,
+                    Description = l.Description,
+                    Price = l.Price,
+                    NumBathrooms = l.NumBathrooms,
+                    NumBedrooms = l.NumBedrooms,
+                    Username = l.User.Username,
+                    UserID = l.User.UserId
+                })
+                .AsEnumerable()
+                .Where(r => r.UserID == id).ToList();
+
+            return Ok(reviews);
         }
 
     }

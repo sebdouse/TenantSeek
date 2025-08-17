@@ -5,19 +5,23 @@ import MainNav from './components/MainNav.jsx';
 
 // Import your page components
 import LandlordLogin from './components/pages/LandlordLogin.jsx';
+import LandlordDashboard from './components/pages/LandlordDashboard.jsx';
 import Listings from './components/pages/Listings.jsx';
 import Reviews from './components/pages/Reviews.jsx';
 import HelpAndInfo from './components/pages/HelpAndInfo.jsx';
 import LandingPage from './components/pages/LandingPage.jsx';
 
 function App() {
+    const [userID, setUserID] = useState(null)
+
     return (
         <BrowserRouter>
           <div className="min-h-full bg-gradient-to-r from-[#7844E5] to-[#4B21C0]">
             <MainNav />
             <Routes>
               <Route path="/" element={<LandingPage />} />
-              <Route path="/login" element={<LandlordLogin />} />
+              <Route path="/login" element={<LandlordLogin login={setUserID} />} />
+              <Route path="/dashboard" element={<LandlordDashboard userID={userID} />} />
               <Route path="/listings" element={<Listings />} />
               <Route path="/reviews" element={<Reviews />} />
               <Route path="/help" element={<HelpAndInfo />} />
