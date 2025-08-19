@@ -2,63 +2,72 @@
 import '../../App.css';
 import InfoCard from '../InfoCard';
 import ListingsCard from '../ListingsCard';
+import PopUp from '../PopUp';
 
 
-function LandlordDashboard({ userID }) {
-
-    console.log("User ID: " + userID)
+function LandlordDashboard({ userID, name }) {
+    document.body.style.overflow = "scroll"
 
     const [listingsData, setListingsData] = useState([])
     const [reviewsData, setReviewsData] = useState([])
+    const [loadingListings, setLoadingListings] = useState(true);
+    const [loadingReviews, setLoadingReviews] = useState(true);
     const [errors, setErrors] = useState("")
-    const [username, setUsername] = useState("")
+    const [togglePop, setTogglePop] = useState(false)
     const API_URL = import.meta.env.VITE_API_URL
+    
 
     //Fetch listingsData and reviewsData by userID
     useEffect(() => {
-
         const getReviews = async () => {
-            const response = await fetch(`${API_URL}/api/Reviews/GetReviewsByID/${userID}`)
-            const data = await response.json();
-            setReviewsData(data.map(d => ({
-                Id: d.reviewId,
-                Role: d.role,
-                About: d.name,
-                Rating: d.rating,
-                Description: d.description
-            })));
-        }
+            setLoadingReviews(true);
+            try {
+                const response = await fetch(`${API_URL}/api/Reviews/GetReviewsByID/${userID}`);
+                const data = await response.json();
+                if (response.ok) {
+                    setReviewsData(data.map(d => ({
+                        Id: d.reviewId,
+                        Role: d.role,
+                        About: d.name,
+                        Rating: d.rating,
+                        Description: d.description
+                    })));
+                }
+            } finally {
+                setLoadingReviews(false);
+            }
+        };
 
         const getListings = async () => {
-            const response = await fetch(`${API_URL}/api/listings/GetListingsByID/${userID}`)
-            const data = await response.json()
-            
-            
-            setListingsData(data.map((r) => (
-                {
-                    Owner: r.username,
-                    Address: r.address,
-                    Price: r.price,
-                    Bedrooms: r.numBedrooms,
-                    Bathrooms: r.numBathrooms,
-                    Description: r.description,
-                    Images: '', //Will Implement Later with FileTables
-                    TypeOfPurchase: r.type
-                }
-            )));
-        }
-        try {
-            getListings()
-            getReviews()
-        } catch(e) {
-            setErrors(e)
-        }
-    }, [])
+            setLoadingListings(true);
+            try {
+                const response = await fetch(`${API_URL}/api/listings/GetListingsByID/${userID}`);
+                const data = await response.json();
+                if (response.ok) {
+                    setListingsData(data.map((r) => ({
+                        Owner: r.username,
+                        Address: r.address,
+                        Price: r.price,
+                        Bedrooms: r.numBedrooms,
+                        Bathrooms: r.numBathrooms,
+                        Description: r.description,
+                        Images: '', //Will Implement Later with FileTables
+                        TypeOfPurchase: r.type
+                    })))
+                };
+            } finally {
+                setLoadingListings(false);
+            }
+        };
+
+        getListings();
+        getReviews();
+    }, [API_URL, userID])
 
     function LoadListings() {
-        if (listingsData) {
+        if (!loadingListings) {
             return (
-                <div className="sub-container z-10">
+                <div className="sub-container">
                     {
                         listingsData.map((r, i) => (
                             <ListingsCard key={i}
@@ -74,12 +83,14 @@ function LandlordDashboard({ userID }) {
                         ))}
                 </div>
             )
+        } else if (!loadingReviews && reviewsData.length == 0) {
+            return <h1 className="p-10 text-lg font-semibold text-black">No data was found</h1>
         }
         return <h1 className="p-10 text-lg font-semibold text-black">{errors ? errors : "Loading..."}</h1>
     }
 
     function LoadReviews() {
-        if (reviewsData) {
+        if (!loadingReviews) {
             return (
                 <div className="sub-container">
                     {reviewsData.map((r) => (
@@ -90,24 +101,33 @@ function LandlordDashboard({ userID }) {
                             rating={r.Rating}
                             about={r.About}
                             desc={r.Description}
-                             />
+                        />
                     ))}
                 </div>
             )
+        } else if (!loadingReviews && reviewsData.length == 0) {
+            return <h1 className="p-10 text-lg font-semibold text-black">No data was found</h1>
         }
+        
         return <h1 className="p-10 text-lg font-semibold text-black">{errors ? errors : "Loading..."}</h1>
     }
 
     return (
         <>
+            <PopUp toggle={togglePop} setToggle={setTogglePop} Id={userID} />
             <div className="mt-[7%] h-[200vh] w-full px-20 pt-10">
-                <h1 className="flex pb-20 font-semibold text-[2.5rem] text-[#fcf8ff]">Welcome, **USERNAME**</h1>
+                <h1 className="flex pb-20 font-semibold text-[2.5rem] text-[#fcf8ff]">Welcome, {name}</h1>
                 <h2 className="flex pb-2 text-lg">Your house listings...</h2>
-                <div className="flex max-h-[80vh] min-h-[35vh] w-[90vw] rounded bg-[#fcf8ff]">
+                <div className="relative flex max-h-[80vh] min-h-[50vh] w-[90vw] rounded bg-[#fcf8ff]">
+                    <button
+                        className="addListingBtn z-[20] absolute right-5 top-5 flex h-[5.5vh] items-center justify-center"
+                        onClick={() => { setTogglePop(true) } }
+                    >+
+                    </button>
                     <LoadListings/>
                 </div>
                 <h2 className="flex pb-2 pt-[10rem] text-lg">Your Reviews so far...</h2>
-                <div className="flex max-h-[80vh] min-h-[35vh] w-[90vw] rounded bg-[#fcf8ff]">
+                <div className="flex max-h-[80vh] min-h-[50vh] w-[90vw] rounded bg-[#fcf8ff]">
                     <LoadReviews/>
                 </div>
             </div>

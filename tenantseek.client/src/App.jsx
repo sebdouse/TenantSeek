@@ -13,6 +13,22 @@ import LandingPage from './components/pages/LandingPage.jsx';
 
 function App() {
     const [userID, setUserID] = useState(null)
+    const [username, setUsername] = useState(null)
+    
+
+    useEffect(() => {
+        if (userID) {
+            console.log("UserID from App.jsx:  " + userID)
+            localStorage.setItem('Id', userID)
+            localStorage.setItem('name', username)
+        }
+        else {
+            console.log("Setting userID from cache...")
+            setUserID(localStorage.getItem('Id'))
+            setUsername(localStorage.getItem('name'))
+            
+        }
+    }, [])
 
     return (
         <BrowserRouter>
@@ -20,8 +36,8 @@ function App() {
             <MainNav />
             <Routes>
               <Route path="/" element={<LandingPage />} />
-              <Route path="/login" element={<LandlordLogin login={setUserID} />} />
-              <Route path="/dashboard" element={<LandlordDashboard userID={userID} />} />
+                    <Route path="/login" element={<LandlordLogin login={setUserID} getUsername={setUsername}/>} />
+              <Route path="/dashboard" element={<LandlordDashboard userID={userID} name={username} />} />
               <Route path="/listings" element={<Listings />} />
               <Route path="/reviews" element={<Reviews />} />
               <Route path="/help" element={<HelpAndInfo />} />

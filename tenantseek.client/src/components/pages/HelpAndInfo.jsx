@@ -4,7 +4,7 @@ import '../../App.css';
 
 
 function HelpAndInfo() {
-
+    document.body.style.overflow = "scroll"
     const helpRef = [useRef(null)]
 
     useEffect(() => {

@@ -3,10 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import '../../App.css';
 
 
-function LandlordLogin({login}) {
+function LandlordLogin({ login, getUsername, _id }) {
+
+    document.body.style.overflow = "hidden"
     const [error, setError] = useState("")
     const navigate = useNavigate()
     const API_URL = import.meta.env.VITE_API_URL
+
     const handleSubmission = async (e) => {
         e.preventDefault();
         const form = e.target.elements;
@@ -25,7 +28,8 @@ function LandlordLogin({login}) {
             if (!response.ok) {
                 setError("Username or Password is incorrect, try again");
             } else {
-                login(data);
+                login(data.userID);
+                getUsername(data.name)
                 navigate('/dashboard');
             }
         } catch (err) {
@@ -34,8 +38,6 @@ function LandlordLogin({login}) {
           }
       };
 
-    //useEffect(() => {
-    //}, [])
     return (
         <>
             <div className="landlord-login-bg flex h-[100vh] w-[100vw] items-center justify-center bg-[#FCF8FF]">

@@ -88,5 +88,12 @@ namespace TenantSeek.Server.Controllers
             return Ok(reviews);
         }
 
+        [HttpPost, Route("CreateListing/{listing}")]
+        public IActionResult CreateListing([FromBody]Listings listing)
+        {
+            dbContext.Listings.Add(listing);
+            return Ok();
+        }
+
     }
 }

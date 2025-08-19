@@ -1,0 +1,11 @@
+To-Do List for project:
+	
+	-	Adding Listings (ALMOST DONE)
+	-	Adding Reviews
+	-	Upload & Receiving Images for listings
+	-	Landlord Dashboard Login
+	-	Populate Landing Page info containers with text
+
+	?-	Populate the help and info better
+	?- 	Implement Caching of the results of common fetches for efficiency
+	?-	Implement a listings image collage pop-up
