@@ -88,10 +88,25 @@ namespace TenantSeek.Server.Controllers
             return Ok(reviews);
         }
 
-        [HttpPost, Route("CreateListing/{listing}")]
-        public IActionResult CreateListing([FromBody]Listings listing)
+        [HttpPost, Route("CreateListing")]
+        public IActionResult CreateListing([FromBody] CreateListingDTO listingDto)
         {
+            Console.WriteLine("Listings UserID: // " + listingDto.UserId);
+            
+
+            var listing = new Listings
+            {
+                UserId = listingDto.UserId,
+                Address = listingDto.Address,
+                Type = listingDto.Type,
+                Description = listingDto.Description,
+                Price = listingDto.Price,
+                NumBathrooms = listingDto.NumBathrooms,
+                NumBedrooms = listingDto.NumBedrooms
+            };
+
             dbContext.Listings.Add(listing);
+            dbContext.SaveChanges();
             return Ok();
         }
 

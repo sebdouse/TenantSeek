@@ -1,14 +1,14 @@
 ﻿import '../App.css';
 
 function PopUp({ toggle, setToggle, id }) {
-
+    console.log("ID from pop-up:   ////   " + id)
     async function handleSubmission(e) {
         const API_URL = import.meta.env.VITE_API_URL
         e.preventDefault()
         const form = e.target.elements
         const address = form.address.value
         const price = form.price.value
-        const rental = form.rental.value ? "Rental" : "Buy-To-Own"
+        const type = form.rental.value ? "Rental" : "Buy-To-Own"
         const numBathrooms = form.numBathrooms.value
         const numBedrooms = form.numBedrooms.value
         const description = form.description.value
@@ -16,7 +16,7 @@ function PopUp({ toggle, setToggle, id }) {
             method: 'POST',
             headers: {'Content-type': 'application/json; charset=UTF-8'},
             body: JSON.stringify({
-                id, address, price, rental, numBathrooms, numBedrooms, description
+                UserId: id, address, type, description, price, numBathrooms, numBedrooms //Map CreateListingDTO on the functions parameter intake
             })
         })
         setToggle(false)

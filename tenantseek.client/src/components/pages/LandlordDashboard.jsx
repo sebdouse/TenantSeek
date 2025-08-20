@@ -5,7 +5,7 @@ import ListingsCard from '../ListingsCard';
 import PopUp from '../PopUp';
 
 
-function LandlordDashboard({ userID, name }) {
+function LandlordDashboard({ userID}) {
     document.body.style.overflow = "scroll"
 
     const [listingsData, setListingsData] = useState([])
@@ -14,6 +14,7 @@ function LandlordDashboard({ userID, name }) {
     const [loadingReviews, setLoadingReviews] = useState(true);
     const [errors, setErrors] = useState("")
     const [togglePop, setTogglePop] = useState(false)
+    const [name, setName] = useState("")
     const API_URL = import.meta.env.VITE_API_URL
     
 
@@ -43,8 +44,9 @@ function LandlordDashboard({ userID, name }) {
             try {
                 const response = await fetch(`${API_URL}/api/listings/GetListingsByID/${userID}`);
                 const data = await response.json();
-                if (response.ok) {
-                    setListingsData(data.map((r) => ({
+                if (response.ok && data.length > 0) {
+                    setListingsData(data.map((r) => (
+                        {
                         Owner: r.username,
                         Address: r.address,
                         Price: r.price,
@@ -53,7 +55,10 @@ function LandlordDashboard({ userID, name }) {
                         Description: r.description,
                         Images: '', //Will Implement Later with FileTables
                         TypeOfPurchase: r.type
-                    })))
+                        }
+
+                    )))
+                    setName(data[0].username)
                 };
             } finally {
                 setLoadingListings(false);
@@ -62,10 +67,10 @@ function LandlordDashboard({ userID, name }) {
 
         getListings();
         getReviews();
-    }, [API_URL, userID])
+    }, [API_URL, userID, name])
 
     function LoadListings() {
-        if (!loadingListings) {
+        if (!loadingListings && reviewsData.length > 0) {
             return (
                 <div className="sub-container">
                     {
@@ -83,7 +88,7 @@ function LandlordDashboard({ userID, name }) {
                         ))}
                 </div>
             )
-        } else if (!loadingReviews && reviewsData.length == 0) {
+        } else if (!loadingReviews && listingsData.length == 0) {
             return <h1 className="p-10 text-lg font-semibold text-black">No data was found</h1>
         }
         return <h1 className="p-10 text-lg font-semibold text-black">{errors ? errors : "Loading..."}</h1>
@@ -112,13 +117,14 @@ function LandlordDashboard({ userID, name }) {
         return <h1 className="p-10 text-lg font-semibold text-black">{errors ? errors : "Loading..."}</h1>
     }
 
+    console.log("ID from the dashboard:  ////   " + userID)
     return (
         <>
-            <PopUp toggle={togglePop} setToggle={setTogglePop} Id={userID} />
+            <PopUp toggle={togglePop} setToggle={setTogglePop} id={userID} />
             <div className="mt-[7%] h-[200vh] w-full px-20 pt-10">
                 <h1 className="flex pb-20 font-semibold text-[2.5rem] text-[#fcf8ff]">Welcome, {name}</h1>
                 <h2 className="flex pb-2 text-lg">Your house listings...</h2>
-                <div className="relative flex max-h-[80vh] min-h-[50vh] w-[90vw] rounded bg-[#fcf8ff]">
+                <div className="relative flex max-h-[80vh] min-h-[50vh] w-[90vw] overflow-scroll rounded bg-[#fcf8ff]">
                     <button
                         className="addListingBtn z-[20] absolute right-5 top-5 flex h-[5.5vh] items-center justify-center"
                         onClick={() => { setTogglePop(true) } }
@@ -127,7 +133,7 @@ function LandlordDashboard({ userID, name }) {
                     <LoadListings/>
                 </div>
                 <h2 className="flex pb-2 pt-[10rem] text-lg">Your Reviews so far...</h2>
-                <div className="flex max-h-[80vh] min-h-[50vh] w-[90vw] rounded bg-[#fcf8ff]">
+                <div className="flex max-h-[80vh] min-h-[50vh] w-[90vw] overflow-scroll rounded bg-[#fcf8ff]">
                     <LoadReviews/>
                 </div>
             </div>

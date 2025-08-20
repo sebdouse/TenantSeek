@@ -5,6 +5,7 @@ import ListingsCard from '../ListingsCard.jsx'
 
 function Listings() {
     document.body.style.overflow = "hidden"
+    window.scrollTo(0, 0)
 
     const [listingsData, setListingsData] = useState([])
     const [query, setQuery] = useState("")

@@ -22,6 +22,19 @@ namespace TenantSeek.Server.Controllers
             return Ok();
         }
 
+        [HttpGet, Route("GetAllUsers")]
+        public IActionResult GetAllUsers()
+        {
+            var users = dbContext.Users
+                        .Select((l) => new userListDTO
+                            {
+                                UserId = l.UserId,
+                                Username =l.Username
+                            })
+                        .ToList();
+            return Ok(users);
+        }
+
         [HttpPost, Route("Login")]
         public IActionResult Login([FromBody] LoginRequest request)
         {

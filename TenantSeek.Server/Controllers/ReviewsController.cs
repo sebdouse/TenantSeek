@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using TenantSeek.Server.Models;
+using TenantSeek.Server.Models.DTO;
 
 namespace TenantSeek.Server.Controllers
 {
@@ -47,6 +48,26 @@ namespace TenantSeek.Server.Controllers
         {
             var reviews = dbContext.Reviews.Where(r => r.UserId == id).OrderByDescending(r => r.Rating).ToList();
             return Ok(reviews);
+        }
+
+        [HttpPost, Route("AddReview")]
+        public IActionResult AddReview([FromBody] CreateReviewDTO _review)
+        {
+            var user = dbContext.Users.FirstOrDefault((r) => (r.Username == _review.About));
+            var userId = user != null ? user.UserId : 0; //I did not know you could also do this in C#
+
+                var review = new Reviews
+                {
+                    UserId = userId,
+                    Role = _review.Type,
+                    Name = _review.About,
+                    Rating = _review.Rating,
+                    Description = _review.description
+                };
+            dbContext.Reviews.Add(review);
+            dbContext.SaveChanges();
+            return Ok();
+
         }
 
 

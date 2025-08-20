@@ -42,28 +42,28 @@ function LandlordLogin({ login, getUsername, _id }) {
         <>
             <div className="landlord-login-bg flex h-[100vh] w-[100vw] items-center justify-center bg-[#FCF8FF]">
                 <form 
-                  className="mt-30 z-10 flex h-[80%] w-[30%] flex-col items-start justify-center gap-10 rounded-[2rem] bg-[#9B89B3] p-10"
+                  className="mt-30 z-10 flex h-[80vh] w-[30vw] flex-col items-start justify-center gap-10 rounded-[2rem] bg-[#9B89B3] p-10"
                   onSubmit={handleSubmission}
                 >
                     <img src="dummyLogo.jpg" className="absolute top-40 h-auto w-[100px] self-end justify-self-start rounded-[100%] border"/>
-                    <div className="flex h-[15%] flex-col items-start">
+                    <div className="flex h-[11vh] flex-col items-start">
                         <label className="block pb-2 font-semibold text-[1.25rem]">Username </label>
                         
                         <input
                             type="text"
                             placeholder="Username"
-                            className="h-[100%] rounded border bg-[#FCF8FF] pl-2"
+                            className="h-[80vh] rounded border bg-[#FCF8FF] pl-2"
                             name="username"
                         />
                     </div>
 
-                    <div className="flex h-[15%] flex-col items-start">
+                    <div className="flex h-[11vh] flex-col items-start">
                         <label className="block pb-2 font-semibold text-[1.25rem]">Password </label>
                         
                         <input
                             type="password"
                             placeholder="Password"
-                            className="h-[100%] rounded border bg-[#FCF8FF] pl-2"
+                            className="h-[100vh] rounded border bg-[#FCF8FF] pl-2"
                             name="password"
                         />
                     </div>

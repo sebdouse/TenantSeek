@@ -3,7 +3,7 @@ import '../../App.css';
 import InfoCard from '../InfoCard';
 function Reviews() {
     document.body.style.overflow = "hidden"
-
+    window.scrollTo(0,0)
     const reviewRef = useRef(null);
     const [filterBtn, setFilterBtn] = useState(null);
     const [reviews, setReviews] = useState([]);
@@ -11,6 +11,7 @@ function Reviews() {
     const [isLoading, setIsLoading] = useState(true)
     const [query, setQuery] = useState("");
     const [sendQuery, setSendQuery] = useState(false)
+    const [toggle, setToggle] = useState(false)
     const apiUrl = import.meta.env.VITE_API_URL;
 
     useEffect(() => {
@@ -90,49 +91,55 @@ function Reviews() {
         useEffect(() => {console.log(query)}, [query])
 
     return (
-        <div className="mt-25 min-h-screen text-[#fcf8ff]">
-            <div className="relative flex min-h-screen flex-col items-center justify-center">
-                <div className="reviews-animate absolute top-[4vh] z-30 block" ref={reviewRef}>
-                    <div className="main-container">
-                        <form className="absolute z-20 flex h-[12.5%] w-full justify-evenly border-b border-b-black p-5 text-black">
-                            <input
-                                className="rounded-[2rem] border border-black pl-3"
-                                type="text"
-                                placeholder="Search by name:"
-                                value={query}
-                                onChange={e => setQuery(e.target.value)}
-                                onKeyDown={handleKeyDown}
-                            />
-                            <div className="inline-flex items-center gap-5">
-                                <p className="font-semibold">About:</p>
+        <>
+            <AddReview toggle={toggle} setToggle={setToggle}/> 
+            <div className="mt-25 min-h-screen text-[#fcf8ff]">
+                <div className="relative flex min-h-screen flex-col items-center justify-center">
+                    <div className="reviews-animate absolute top-[4vh] z-30 block" ref={reviewRef}>
+                        <div className="main-container">
+                            <form className="absolute z-20 flex h-[12.5%] w-full justify-evenly border-b border-b-black p-5 text-black">
+                                <input
+                                    className="rounded-[2rem] border border-black pl-3"
+                                    type="text"
+                                    placeholder="Search by name:"
+                                    value={query}
+                                    onChange={e => setQuery(e.target.value)}
+                                    onKeyDown={handleKeyDown}
+                                />
+                                <div className="inline-flex items-center gap-5">
+                                    <p className="font-semibold">About:</p>
+                                    <button
+                                        id="landlord-btn"
+                                        type="button"
+                                        onClick={aboutButton}
+                                        value="Landlord"
+                                        className={`selector-btn${filterBtn === "Landlord" ? " selected" : ""}`}>
+                                        Landlord
+                                    </button>
+                                    <button
+                                        id="tenant-btn"
+                                        type="button"
+                                        onClick={aboutButton}
+                                        value="Tenant"
+                                        className={`selector-btn${filterBtn === "Tenant" ? " selected" : ""}`}>
+                                        Tenant
+                                    </button>
+                                </div>
                                 <button
-                                    id="landlord-btn"
-                                    type="button"
-                                    onClick={aboutButton}
-                                    value="Landlord"
-                                    className={`selector-btn${filterBtn === "Landlord" ? " selected" : ""}`}>
-                                    Landlord
-                                </button>
-                                <button
-                                    id="tenant-btn"
-                                    type="button"
-                                    onClick={aboutButton}
-                                    value="Tenant"
-                                    className={`selector-btn${filterBtn === "Tenant" ? " selected" : ""}`}>
-                                    Tenant
-                                </button>
+                                    className=""
+                                    onClick={() => { setToggle(true) }}>+</button>
+                            </form>
+                            <div className="sub-container mt-[10vh]">
+                                {reviews.map((r) => (
+                                    <InfoCard key={r.Id} id={r.Id} role={r.Role} rating={r.Rating} about={r.About} desc={r.Description} />
+                                ))}
                             </div>
-                        </form>
-                        <div className="sub-container mt-[10vh]">
-                            {reviews.map((r) => (
-                                <InfoCard key={r.Id} id={r.Id} role={r.Role} rating={r.Rating} about={r.About} desc={r.Description} />
-                            ))}
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
+        </>
+            );
 }
 
 export default Reviews;

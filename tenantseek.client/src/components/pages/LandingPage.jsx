@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from 'react'
 
 function LandingPage() {
     document.body.style.overflow = "scroll"
+    window.scrollTo(0, 0)
     const landingRef = [useRef(null), useRef(null), useRef(null)];
     const boxRefs = [useRef(null), useRef(null), useRef(null)];
     const [connectionSuccess, setConnectionSuccess] = useState(false)
