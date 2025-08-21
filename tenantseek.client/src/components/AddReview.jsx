@@ -38,27 +38,26 @@ function AddReview({ toggle, setToggle}) {
                         <label>About  </label>
                         
                         <input
-                            name="address"
+                            name="about"
                             type="text"
                             placeholder="About"
                             className="form-data"
                         />
                     </div>
-                    <div>
-                        <label>Relationship: My {_type ? "Tenant" : "Landlord"}</label>
-                        <input
-                            type="button"
-                            className="selector-button"
-                            onClick={() => { setType(!_type) }} />
+                    <div className="relative block">
+                        <label className="min-w-[100] pr-5">Relationship: My {_type ? "Tenant" : "Landlord"}</label>
                     </div>
+                        <button
+                            className="selector-btn absolute left-[25%] top-[15%] w-[8%] !text-xs"
+                            onClick={() => { setType(!_type) }}>Change</button>
                     <div>
                     <label>Rating</label>
                         <input
                             name="rating"
                             type="number"
-                            min="1"
+                            min="0"
                             max="5"
-                            className="form-data inline-flex w-[4vh] items-center justify-center border"
+                            className="form-data inline-flex w-[3vw] items-center justify-center border"
                         />
                     </div>
                     <div className="flex h-full w-full flex-col items-start">

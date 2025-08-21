@@ -1,6 +1,6 @@
 To-Do List for project:
 	
-	-	Adding Reviews (ALMOST DONE)
+	-	Hash Passwords on the server-side
 	-	Upload & Receiving Images for listings
 	-	Populate Landing Page info containers with text
 

@@ -110,5 +110,18 @@ namespace TenantSeek.Server.Controllers
             return Ok();
         }
 
+        [HttpDelete, Route("DeleteListing/{id}")]
+        public IActionResult DeleteListing(int id)
+        {
+            var listing = dbContext.Listings.FirstOrDefault((r) => (r.ListingId == id));
+            if (listing != null)
+            {
+                dbContext.Listings.Remove(listing);
+                dbContext.SaveChanges();
+                return Ok();
+            }
+            return BadRequest();
+        }
+
     }
 }

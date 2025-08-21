@@ -47,6 +47,7 @@ function LandlordDashboard({ userID}) {
                 if (response.ok && data.length > 0) {
                     setListingsData(data.map((r) => (
                         {
+                        ListingId: r.listingId,
                         Owner: r.username,
                         Address: r.address,
                         Price: r.price,
@@ -69,13 +70,22 @@ function LandlordDashboard({ userID}) {
         getReviews();
     }, [API_URL, userID, name])
 
+    async function handleDelete(id) {
+        console.log("DELETING: ///" + id);
+        const response = await fetch(`${API_URL}/api/Listings/DeleteListing/${id}`, { method: 'DELETE' });
+
+        if (response.ok) {
+            setListingsData(prev => prev.filter(listing => listing.ListingId !== id));
+        }
+    }
     function LoadListings() {
         if (!loadingListings && reviewsData.length > 0) {
             return (
-                <div className="sub-container">
+                <div className="sub-container relative overflow-scroll">
                     {
-                        listingsData.map((r, i) => (
-                            <ListingsCard key={i}
+                        listingsData.map((r) => (
+                            <div key={r.ListingId}>
+                            <ListingsCard key={r.ListingId}
                                 Owner={r.Owner}
                                 Address={r.Address}
                                 Price={r.Price}
@@ -84,7 +94,14 @@ function LandlordDashboard({ userID}) {
                                 Description={r.Description}
                                 Images={r.Images}
                                 TypeOfPurchase={r.TypeOfPurchase}
-                            />
+                                />
+                                <button
+                                    onClick={() => handleDelete(r.ListingId)}
+                                    className="-translate-y-26 absolute right-[10%] mb-5 flex items-center justify-center !border-2 !border-red-300 bg-red-100 text-red-600"
+                                >
+                                    X
+                                </button>
+                            </div>
                         ))}
                 </div>
             )
@@ -97,8 +114,9 @@ function LandlordDashboard({ userID}) {
     function LoadReviews() {
         if (!loadingReviews) {
             return (
-                <div className="sub-container">
+                <div className="sub-container overflow-scroll">
                     {reviewsData.map((r) => (
+                        
                         <InfoCard
                             key={r.Id}
                             id={r.Id}
@@ -107,6 +125,7 @@ function LandlordDashboard({ userID}) {
                             about={r.About}
                             desc={r.Description}
                         />
+                        
                     ))}
                 </div>
             )

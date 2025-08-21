@@ -22,7 +22,9 @@ namespace TenantSeek.Server.Controllers
         public IActionResult GetAllReviews()
         {
             //Get Review information and also extract the UserId and replace it with the Username corresponding to the ID
-            var reviews = dbContext.Reviews.ToList();
+            var reviews = dbContext.Reviews
+                .OrderByDescending((r) => (r.ReviewId))
+                .ToList();
             
             return Ok(reviews);
         }
@@ -31,7 +33,9 @@ namespace TenantSeek.Server.Controllers
         public IActionResult GetReviewsByType(string role)
         {
             //Get Review information and also extract the UserId and replace it with the Username corresponding to the ID
-            var reviews = dbContext.Reviews.Where(r => r.Role == role).ToList();
+            var reviews = dbContext.Reviews.Where(r => r.Role == role)
+                .OrderByDescending((r) => (r.ReviewId))
+                .ToList();
 
             return Ok(reviews);
         }
@@ -39,7 +43,9 @@ namespace TenantSeek.Server.Controllers
         [HttpGet, Route("GetReviewsByName/{name}")]
         public IActionResult GetReviewsByName(string name) //Make it so the name only has to be partially right to appear on the search
         {
-            var reviews = dbContext.Reviews.Where(r => r.Name == name).ToList();
+            var reviews = dbContext.Reviews.Where(r => r.Name == name)
+                .OrderByDescending((r) => (r.ReviewId))
+                .ToList();
             return Ok(reviews);
         }
 

@@ -1,5 +1,6 @@
 public class CreateListingDTO
 {
+    public int ListingId { get; set; }
     public int UserId { get; set; }
     public string Address { get; set; }
     public string Type { get; set; }

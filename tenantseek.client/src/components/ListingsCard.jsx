@@ -18,7 +18,7 @@ function ListingsCard(props) {
                         <div className="c-img-3" />
                         <div className="c-img-4" />
                     </div>
-                    <div className="flex flex-col justify-evenly pl-5">
+                    <div className="flex w-[40%] flex-col justify-evenly justify-self-end pl-3">
                         <p className="text-[125%]">Price: £{props.Price} {props.TypeOfPurchase == "Rental" ? "p/m" : ""}</p>
                         <p>Bathrooms: {props.Bathrooms}</p>
                         <p>Bedrooms: {props.Bedrooms}</p>

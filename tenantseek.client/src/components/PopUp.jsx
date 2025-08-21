@@ -85,7 +85,7 @@ function PopUp({ toggle, setToggle, id }) {
                     </div>
                     <div className="absolute bottom-[50%] left-[50%] ml-5 mt-5 flex flex-col items-start p-5">
                     <label>Choose your images</label>
-                        <input type="file" placeholder="images" className="cursor-pointer bg-[#E8E5EB]" />
+                        <input type="file" placeholder="images" className="cursor-pointer bg-[#E8E5EB]" multiple />
                     </div>
                     <button
                         type="submit"

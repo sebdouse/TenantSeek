@@ -1,6 +1,7 @@
 ﻿import React, { useRef, useEffect, useState } from 'react';
 import '../../App.css';
 import InfoCard from '../InfoCard';
+import AddReview from '../AddReview';
 function Reviews() {
     document.body.style.overflow = "hidden"
     window.scrollTo(0,0)
@@ -64,7 +65,7 @@ function Reviews() {
                     }
                 });
             },
-            { threshold: 0.2 }
+            { threshold: 0 }
         );
         if (reviewRef.current) {
             observer.observe(reviewRef.current);
@@ -95,7 +96,7 @@ function Reviews() {
             <AddReview toggle={toggle} setToggle={setToggle}/> 
             <div className="mt-25 min-h-screen text-[#fcf8ff]">
                 <div className="relative flex min-h-screen flex-col items-center justify-center">
-                    <div className="reviews-animate absolute top-[4vh] z-30 block" ref={reviewRef}>
+                    <div className="reviews-animate absolute top-[4vh] block" ref={reviewRef}>
                         <div className="main-container">
                             <form className="absolute z-20 flex h-[12.5%] w-full justify-evenly border-b border-b-black p-5 text-black">
                                 <input
@@ -125,10 +126,11 @@ function Reviews() {
                                         Tenant
                                     </button>
                                 </div>
-                                <button
-                                    className=""
-                                    onClick={() => { setToggle(true) }}>+</button>
                             </form>
+                                <button
+                                    className="z-[50]"
+                                    onClick={() => { setToggle(true) }}
+                                >+</button>
                             <div className="sub-container mt-[10vh]">
                                 {reviews.map((r) => (
                                     <InfoCard key={r.Id} id={r.Id} role={r.Role} rating={r.Rating} about={r.About} desc={r.Description} />
