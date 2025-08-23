@@ -107,13 +107,74 @@ namespace TenantSeek.Server.Controllers
 
             dbContext.Listings.Add(listing);
             dbContext.SaveChanges();
-            return Ok();
+
+            var listingId = dbContext.Listings
+                                .FirstOrDefault(r => (r.Address == listingDto.Address));
+            if (listingId == null)
+            {
+                return Ok();
+            }
+            else
+            {
+                return Ok(listingId.ListingId);
+            }
+        }
+        [HttpPost, Route("UploadFiles")]
+        public async Task<IActionResult> UploadFiles([FromForm] int listingId, [FromForm] List<IFormFile> files)
+        {
+            try
+            {
+                bool partialUpload = false;
+                string errorMessage = "";
+                if (files == null) { return Ok("Warning: No images found, is that intentional?"); }
+                foreach (IFormFile file in files)
+                {
+                    if (file.Length > (5 * 1024 * 1024))
+                    {
+                        partialUpload = true;
+                        errorMessage = errorMessage + file.Name;
+                        continue;
+                    }
+
+                    //Upload Code here...
+                    var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "UploadedImages");
+                    Directory.CreateDirectory(uploadsFolder);
+                    var filePath = Path.Combine(uploadsFolder, Guid.NewGuid() + Path.GetExtension(file.FileName));
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await file.CopyToAsync(stream);
+                    }
+
+                    //Reference to files URL uploaded to DB here...
+                    var image = new Images
+                    {
+                        ListingId = listingId,
+                        ImageURL = filePath
+                    };
+                    dbContext.Images.Add(image);
+                }
+                await dbContext.SaveChangesAsync();
+                if (partialUpload)
+                {
+                    errorMessage = "Files ( " + errorMessage + " ) were not uploaded as they are above the 5mb size limit";
+                    return Ok(errorMessage);
+                }
+                else
+                {
+                    return Ok();
+                }
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+
         }
 
         [HttpDelete, Route("DeleteListing/{id}")]
         public IActionResult DeleteListing(int id)
         {
-            var listing = dbContext.Listings.FirstOrDefault((r) => (r.ListingId == id));
+            var listing = dbContext.Listings.FirstOrDefault(r => r.ListingId == id);
             if (listing != null)
             {
                 dbContext.Listings.Remove(listing);

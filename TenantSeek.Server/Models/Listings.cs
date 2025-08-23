@@ -8,16 +8,18 @@ namespace TenantSeek.Server.Models
     {
         [Key]
         public int ListingId { get; set; }
-        
         public int UserId { get; set; }
-        public string Address { get; set; }
-        public string Type { get; set; }
+        public required string Address { get; set; }
+        public required string Type { get; set; }
         public string Description { get; set; }
-        public int Price { get; set; }
-        public int NumBathrooms { get; set; }
-        public int NumBedrooms { get; set; }
+        public required int Price { get; set; }
+        public required int NumBathrooms { get; set; }
+        public required int NumBedrooms { get; set; }
 
         //navigation property as foreign key
         public User User { get; set; }
+
+        //Origin Foreign Key link
+        public ICollection<Images> Images { get; set; }
     }
 }

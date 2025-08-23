@@ -22,6 +22,11 @@ function AddReview({ toggle, setToggle}) {
        setToggle(false)
     }
 
+    async function handleType(e){
+        e.preventDefault()
+        setType(!_type)
+    }
+
     if (toggle) {
         document.body.style.overflow = "hidden"
         return (
@@ -42,6 +47,7 @@ function AddReview({ toggle, setToggle}) {
                             type="text"
                             placeholder="About"
                             className="form-data"
+                            autoComplete="off"
                         />
                     </div>
                     <div className="relative block">
@@ -49,7 +55,7 @@ function AddReview({ toggle, setToggle}) {
                     </div>
                         <button
                             className="selector-btn absolute left-[25%] top-[15%] w-[8%] !text-xs"
-                            onClick={() => { setType(!_type) }}>Change</button>
+                            onClick={handleType}>Change</button>
                     <div>
                     <label>Rating</label>
                         <input

@@ -1,6 +1,6 @@
 ﻿import '../App.css';
 
-function PopUp({ toggle, setToggle, id }) {
+function PopUp({ toggle, setToggle, id }) { //For Listings...
     console.log("ID from pop-up:   ////   " + id)
     async function handleSubmission(e) {
         const API_URL = import.meta.env.VITE_API_URL
@@ -19,6 +19,20 @@ function PopUp({ toggle, setToggle, id }) {
                 UserId: id, address, type, description, price, numBathrooms, numBedrooms //Map CreateListingDTO on the functions parameter intake
             })
         })
+        const listingId = await response.json()
+        const files = form.images.files
+        if (files.length > 0) {
+            const formData = new FormData();
+            formData.append('ListingId', listingId)
+            for (let i = 0; i < files.length; i++) {
+                formData.append('files', files[i]);
+            }
+
+            await fetch(`${API_URL}/api/listings/UploadFiles`, {
+                method: 'POST',
+                body: formData
+            });
+        }
         setToggle(false)
     }
 
@@ -26,8 +40,10 @@ function PopUp({ toggle, setToggle, id }) {
     if (toggle) {
         document.body.style.overflow = "hidden"
         return (
-            <div className="overlay">
+            <div className="overlay !fixed">
                 <form
+                    method="post"
+                    encType="multipart/form-data"
                     onSubmit={ handleSubmission }
                     className="relative mt-[10%] flex h-[60vh] w-[60vw] flex-col items-start justify-evenly gap-2 rounded bg-white p-10">
                     <button
@@ -43,6 +59,7 @@ function PopUp({ toggle, setToggle, id }) {
                             type="text"
                             placeholder="Address"
                             className="form-data"
+                            autoComplete="off"
                         />
                     </div>
                     <div className="relative flex w-full justify-start">
@@ -57,6 +74,7 @@ function PopUp({ toggle, setToggle, id }) {
                             type="text"
                             placeholder="Price"
                             className="form-data z-[40] w-[16%] !pl-5"
+                            autoComplete="off"
                         />
                     </div>
                     <div>
@@ -65,6 +83,7 @@ function PopUp({ toggle, setToggle, id }) {
                             name="numBathrooms"
                             type="text"
                             className="form-data inline-flex w-[4vh] items-center justify-center border"
+
                         />
                     </div>
                     <div>
@@ -84,8 +103,15 @@ function PopUp({ toggle, setToggle, id }) {
                     />
                     </div>
                     <div className="absolute bottom-[50%] left-[50%] ml-5 mt-5 flex flex-col items-start p-5">
+
                     <label>Choose your images</label>
-                        <input type="file" placeholder="images" className="cursor-pointer bg-[#E8E5EB]" multiple />
+                        <input
+                            type="file"
+                            placeholder="images"
+                            className="cursor-pointer bg-[#E8E5EB]"
+                            name="images"
+                            accept=".png,.jpg,.gif,.mp4"
+                            multiple />
                     </div>
                     <button
                         type="submit"

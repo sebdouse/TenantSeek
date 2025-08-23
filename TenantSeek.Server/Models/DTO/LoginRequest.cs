@@ -1,4 +1,4 @@
-﻿namespace TenantSeek.Server.Models
+﻿namespace TenantSeek.Server.Models.DTO
 {
     public class LoginRequest
     {

@@ -7,5 +7,6 @@
         public DbSet<User> Users { get; set; }
         public DbSet<Listings> Listings { get; set; }
         public DbSet<Reviews> Reviews { get; set; }
+        public DbSet<Images> Images { get; set; }
     }
 }

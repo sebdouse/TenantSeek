@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TenantSeek.Server.Models;
 
@@ -10,9 +11,11 @@ using TenantSeek.Server.Models;
 namespace TenantSeek.Server.Migrations
 {
     [DbContext(typeof(DbContextModel))]
-    partial class DbContextModelModelSnapshot : ModelSnapshot
+    [Migration("20250823101427_AddImagesFile")]
+    partial class AddImagesFile
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -146,7 +149,7 @@ namespace TenantSeek.Server.Migrations
             modelBuilder.Entity("TenantSeek.Server.Models.Images", b =>
                 {
                     b.HasOne("TenantSeek.Server.Models.Listings", "Listings")
-                        .WithMany()
+                        .WithMany("Images")
                         .HasForeignKey("ListingsListingId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -174,6 +177,11 @@ namespace TenantSeek.Server.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TenantSeek.Server.Models.Listings", b =>
+                {
+                    b.Navigation("Images");
                 });
 
             modelBuilder.Entity("TenantSeek.Server.Models.User", b =>

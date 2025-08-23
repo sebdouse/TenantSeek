@@ -93,13 +93,19 @@ function LandingPage() {
         </div>
             <div className="flex max-h-[calc(2.5*100vh)] min-h-screen flex-col items-center justify-evenly bg-[#f0f0f0]">
                 <div className="information-box-1" ref={boxRefs[0]}>
-                    <div className="information-box-container" style={{ left: '10%' }} ></div>
+                    <div className="information-box-container" style={{ left: '10%' }} >
+
+                    </div>
                 </div>
                 <div className="information-box-2" ref={boxRefs[1]}>
-                    <div className="information-box-container" style={{ right: '10%' }}></div>
+                    <div className="information-box-container" style={{ right: '10%' }}>
+
+                    </div>
                 </div>
                 <div className="information-box-1" ref={boxRefs[2]}>
-                    <div className="information-box-container" style={{ left: '10%' }} ></div>
+                    <div className="information-box-container" style={{ left: '10%' }} >
+
+                    </div>
                 </div>
             </div>
             <p>{connectionSuccess ? "Connection successful" : "Connection not Found"}</p>

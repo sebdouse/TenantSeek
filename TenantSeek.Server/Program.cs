@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using TenantSeek.Server.Models;
+using TenantSeek.Server.Models.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -23,6 +24,8 @@ builder.Services.AddCors(options =>
 
         });
 });
+
+builder.Services.AddSingleton<PasswordService>();
 
 var app = builder.Build();
 

@@ -128,7 +128,8 @@ function Reviews() {
                                 </div>
                             </form>
                                 <button
-                                    className="z-[50]"
+                                //className=" relative left-3 top-4 h-[7%] w-[3%] translate-x-[82vw] bg-green-400 !p-0 !text-xl"
+                                className="addListingBtn z-[20] absolute right-10 top-5 flex h-[5.5vh] items-center justify-center text-black"
                                     onClick={() => { setToggle(true) }}
                                 >+</button>
                             <div className="sub-container mt-[10vh]">

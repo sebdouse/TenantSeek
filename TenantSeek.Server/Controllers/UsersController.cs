@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TenantSeek.Server.Models;
 using TenantSeek.Server.Models.DTO;
+using TenantSeek.Server.Models.Services;
 
 namespace TenantSeek.Server.Controllers
 {
@@ -11,9 +12,11 @@ namespace TenantSeek.Server.Controllers
     public class UsersController : ControllerBase
     {
         private DbContextModel dbContext;
-        public UsersController(DbContextModel dbContext)
+        private PasswordService passwordService;
+        public UsersController(DbContextModel dbContext, PasswordService passwordService)
         {
             this.dbContext = dbContext;
+            this.passwordService = passwordService;
         }
 
         [HttpGet, Route("TestConn")]
@@ -38,21 +41,30 @@ namespace TenantSeek.Server.Controllers
         [HttpPost, Route("Login")]
         public IActionResult Login([FromBody] LoginRequest request)
         {
-            var User = dbContext.Users
-                .Where((u) => (u.Username == request.Username && u.Password == request.Password))
-                .Select(l => new UserInfoDTO
+            var hashed = passwordService.HashPassword(request.Password);
+
+            if (passwordService.VerifyPassword(hashed, request.Password))
+            {
+                var User = dbContext.Users
+                    .Where((u) => (u.Username == request.Username))
+                    .Select(l => new UserInfoDTO
+                    {
+                        userID = l.UserId,
+                        name = l.Username
+                    })
+                    .FirstOrDefault();
+                if (User == null)
                 {
-                    userID = l.UserId,
-                    name = l.Username
-                })
-                .FirstOrDefault();
-            if (User == null)
+                    return BadRequest();
+                }
+                //IMPLEMENT COOKIE AUTH HERE
+
+                return Ok( User );
+            }
+            else
             {
                 return BadRequest();
             }
-            //IMPLEMENT COOKIE AUTH HERE
-
-            return Ok( User );
         }
 
         

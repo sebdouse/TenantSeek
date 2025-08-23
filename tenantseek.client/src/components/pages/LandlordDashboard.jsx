@@ -5,11 +5,12 @@ import ListingsCard from '../ListingsCard';
 import PopUp from '../PopUp';
 
 
-function LandlordDashboard({ userID}) {
+function LandlordDashboard({ userID }) {
     document.body.style.overflow = "scroll"
 
     const [listingsData, setListingsData] = useState([])
     const [reviewsData, setReviewsData] = useState([])
+    const [filedata, setFileData] = useState([])
     const [loadingListings, setLoadingListings] = useState(true);
     const [loadingReviews, setLoadingReviews] = useState(true);
     const [errors, setErrors] = useState("")
@@ -139,7 +140,7 @@ function LandlordDashboard({ userID}) {
     console.log("ID from the dashboard:  ////   " + userID)
     return (
         <>
-            <PopUp toggle={togglePop} setToggle={setTogglePop} id={userID} />
+            <PopUp toggle={togglePop} setToggle={setTogglePop} id={userID} className="!fixed"/>
             <div className="mt-[7%] h-[200vh] w-full px-20 pt-10">
                 <h1 className="flex pb-20 font-semibold text-[2.5rem] text-[#fcf8ff]">Welcome, {name}</h1>
                 <h2 className="flex pb-2 text-lg">Your house listings...</h2>
