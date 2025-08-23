@@ -20,6 +20,6 @@ namespace TenantSeek.Server.Models
         public User User { get; set; }
 
         //Origin Foreign Key link
-        public ICollection<Images> Images { get; set; }
+        //public ICollection<Images> Images { get; set; }
     }
 }

@@ -172,3 +172,4 @@ C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\obj\Debug\net9.0\Te
 C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\obj\Debug\net9.0\ref\TenantSeek.Server.dll
 C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\FuzzySharp.dll
 C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Sebas\Documents\GitHub\TenantSeek\TenantSeek.Server\bin\Debug\net9.0\TenantSeek.Server.staticwebassets.runtime.json

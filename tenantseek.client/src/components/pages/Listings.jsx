@@ -9,13 +9,16 @@ function Listings() {
 
     const [listingsData, setListingsData] = useState([])
     const [query, setQuery] = useState("")
+    const [errors, setErrors] = useState("")
     const [sendQuery, setSendQuery] = useState(false)
+    const [loading, setLoading] = useState(true)
     const API_URL = import.meta.env.VITE_API_URL;
     document.body.style.overflow = "hidden"
 
     useEffect(() => {
 
         const getListings = async () => {
+            setLoading(true)
             try {
                 let response;
                 if (query != "") {
@@ -26,15 +29,17 @@ function Listings() {
                 response = await fetch(`${API_URL}/api/listings`)
                 }
                 const data = await response.json()
+
+                
                 setListingsData(data.map((r) => (
                     {
+                        ListingId: r.listingId,
                         Owner: r.username,
                         Address: r.address,
                         Price: r.price,
                         Bedrooms: r.numBedrooms,
                         Bathrooms: r.numBathrooms,
                         Description: r.description,
-                        Images: '', //Will Implement Later with FileTables
                         TypeOfPurchase: r.type
                     }
                 )));
@@ -42,7 +47,9 @@ function Listings() {
             }   
             catch (e) {
                 console.log("Error" + e)
-                }
+                setErrors(e)
+            }
+            setLoading(false)
         }
         getListings()
         
@@ -80,6 +87,33 @@ function Listings() {
         }
     }
 
+    function LoadListings() {
+        if (loading) {
+            return <h1 className="p-10 text-lg font-semibold text-black">{errors ? errors : "Loading..."}</h1>
+        }
+        else {
+            return(
+            <div className="sub-container z-10 mt-[10vh]">
+                {
+                    listingsData.map((r, i) => (
+                        <ListingsCard
+                            key={i}
+                            ListingId={r.ListingId}
+                            Owner={r.Owner}
+                            Address={r.Address}
+                            Price={r.Price}
+                            Bedrooms={r.Bedrooms}
+                            Bathrooms={r.Bathrooms}
+                            Description={r.Description}
+                            Images={r.Images}
+                            TypeOfPurchase={r.TypeOfPurchase}
+                        />
+                    ))
+                }
+            </div>)
+        }
+    }
+
     return (
         <>
             <div className="mt-25 min-h-screen text-[#fcf8ff]">
@@ -95,21 +129,7 @@ function Listings() {
                                     onKeyDown={handleKeyEvent}
                                 />
                             </form>
-                            <div className="sub-container z-10 mt-[10vh]">
-                                {   
-                                    listingsData.map((r, i) => (
-                                    <ListingsCard key={i}
-                                        Owner={r.Owner}
-                                        Address={r.Address}
-                                        Price={r.Price}
-                                        Bedrooms={r.Bedrooms}
-                                        Bathrooms={r.Bathrooms}
-                                        Description={r.Description}
-                                        Images={r.Images}
-                                        TypeOfPurchase={r.TypeOfPurchase}
-                                    />
-                                ))}
-                            </div>
+                            <LoadListings/>
                         </div>
                     </div>
                 </div>

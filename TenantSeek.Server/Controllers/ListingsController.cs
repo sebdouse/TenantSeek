@@ -120,7 +120,7 @@ namespace TenantSeek.Server.Controllers
             }
         }
         [HttpPost, Route("UploadFiles")]
-        public async Task<IActionResult> UploadFiles([FromForm] int listingId, [FromForm] List<IFormFile> files)
+        public async Task<IActionResult> UploadFiles([FromForm] int ListingId, [FromForm] List<IFormFile> files)
         {
             try
             {
@@ -137,9 +137,10 @@ namespace TenantSeek.Server.Controllers
                     }
 
                     //Upload Code here...
-                    var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "UploadedImages");
+                    var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "UploadedImages");
                     Directory.CreateDirectory(uploadsFolder);
-                    var filePath = Path.Combine(uploadsFolder, Guid.NewGuid() + Path.GetExtension(file.FileName));
+                    var fileName = Guid.NewGuid() + Path.GetExtension(file.FileName);
+                    var filePath = Path.Combine(uploadsFolder, fileName);
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
                         await file.CopyToAsync(stream);
@@ -148,9 +149,9 @@ namespace TenantSeek.Server.Controllers
                     //Reference to files URL uploaded to DB here...
                     var image = new Images
                     {
-                        ListingId = listingId,
-                        ImageURL = filePath
-                    };
+                        ListingId = ListingId,
+                        ImageURL = "/UploadedImages/" + fileName // This will be accessible at http://<host>/UploadedImages/<fileName>
+                      };
                     dbContext.Images.Add(image);
                 }
                 await dbContext.SaveChangesAsync();
@@ -166,9 +167,21 @@ namespace TenantSeek.Server.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest(e);
+                throw e;
+               
             }
 
+        }
+
+        [HttpGet, Route("GetImagesById/{id}")]
+        public IActionResult GetImagesById(int id)
+        {
+            var filePaths = dbContext.Images
+                .Where(r => r.ListingId == id)
+                .Select(r => r.ImageURL)
+                .ToList();
+
+           return Ok(filePaths);
         }
 
         [HttpDelete, Route("DeleteListing/{id}")]

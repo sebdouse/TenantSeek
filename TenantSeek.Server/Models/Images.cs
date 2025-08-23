@@ -10,6 +10,6 @@ namespace TenantSeek.Server.Models
         public string ImageURL { get; set; }
 
         //Foreign Key Reference
-        public Listings Listings { get; set; }
+        //public Listings Listings { get; set; }
     }
 }

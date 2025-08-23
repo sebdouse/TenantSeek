@@ -144,7 +144,8 @@ th, td {
     display: grid;
     grid-template-columns: repeat(3, 33.333333%);
     grid-template-rows: repeat(2, 50%);
-    grid-gap: 2px 
+    grid-gap: 2px;
+    box-shadow: black 1px 1px inset;
 }
 
 .c-img-1 {
@@ -153,6 +154,7 @@ th, td {
     grid-row-start: 1;
     grid-row-end: 3;
     background-color: #fcf8ff; 
+    overflow: hidden;
 }
 .c-img-2 {
     grid-column-start: 2;
@@ -160,6 +162,7 @@ th, td {
     grid-row-start: 1;
     grid-row-end: 3;
     background-color: #fcf8ff;
+    overflow: hidden;
 }
 .c-img-3 {
     grid-column-start: 3;
@@ -167,6 +170,7 @@ th, td {
     grid-row-start: 1;
     grid-row-end: 2;
     background-color: #fcf8ff;
+    overflow: hidden;
 }
 .c-img-4 {
     grid-column-start: 3;
@@ -174,6 +178,7 @@ th, td {
     grid-row-start: 2;
     grid-row-end: 3;
     background-color: #fcf8ff;
+    overflow: hidden;
 }
 
 .form-button {

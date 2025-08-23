@@ -55,7 +55,6 @@ function LandlordDashboard({ userID }) {
                         Bedrooms: r.numBedrooms,
                         Bathrooms: r.numBathrooms,
                         Description: r.description,
-                        Images: '', //Will Implement Later with FileTables
                         TypeOfPurchase: r.type
                         }
 
@@ -86,15 +85,17 @@ function LandlordDashboard({ userID }) {
                     {
                         listingsData.map((r) => (
                             <div key={r.ListingId}>
-                            <ListingsCard key={r.ListingId}
-                                Owner={r.Owner}
-                                Address={r.Address}
-                                Price={r.Price}
-                                Bedrooms={r.Bedrooms}
-                                Bathrooms={r.Bathrooms}
-                                Description={r.Description}
-                                Images={r.Images}
-                                TypeOfPurchase={r.TypeOfPurchase}
+                                <ListingsCard
+                                    key={r.ListingId}
+                                    ListingId={r.ListingId}
+                                    Owner={r.Owner}
+                                    Address={r.Address}
+                                    Price={r.Price}
+                                    Bedrooms={r.Bedrooms}
+                                    Bathrooms={r.Bathrooms}
+                                    Description={r.Description}
+                                    Images={r.Images}
+                                    TypeOfPurchase={r.TypeOfPurchase}
                                 />
                                 <button
                                     onClick={() => handleDelete(r.ListingId)}

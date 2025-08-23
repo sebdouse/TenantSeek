@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using TenantSeek.Server.Models;
 using TenantSeek.Server.Models.Services;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -33,6 +35,8 @@ app.UseCors("AllowFrontend"); // <-- Must be before UseAuthorization()
 
 app.UseDefaultFiles();
 app.MapStaticAssets();
+
+app.UseStaticFiles();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

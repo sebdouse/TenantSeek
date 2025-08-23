@@ -1,6 +1,19 @@
 ﻿import '../App.css';
+import { useEffect, useState } from 'react'
 
 function ListingsCard(props) {
+    const API_URL = import.meta.env.VITE_API_URL
+    const [fileURLs, setFileURLs] = useState([null,null,null,null])
+    useEffect(() => {
+        const getFiles = async () => {
+            const response = await fetch(`${API_URL}/api/listings/GetImagesById/${props.ListingId}`)
+            const data = await response.json()
+            setFileURLs(data)
+        }
+        getFiles()
+    }, [])
+
+
     return (
         <div className="info-card overflow-hidden text-black">
             <div className="flex h-full w-full">
@@ -12,11 +25,19 @@ function ListingsCard(props) {
                     </div>
                 </div>
                 <div className="ml-[5%] flex h-full w-[50%]">
-                    <div className="collage h-[100%] w-[66%] shadow">
-                        <div className="c-img-1" />
-                        <div className="c-img-2" />
-                        <div className="c-img-3" />
-                        <div className="c-img-4" />
+                    <div className="collage h-[100%] w-[66%]">
+                        <div className="c-img-1">
+                            <img className="h-full w-full" src={fileURLs.length >= 0 ? API_URL + fileURLs[0]: 'template_image.jpg'} />
+                        </div>
+                        <div className="c-img-2">
+                            <img className="h-full w-full" src={fileURLs.length >= 1 ? API_URL + fileURLs[1] : 'template_image.jpg'} />
+                        </div>
+                        <div className="c-img-3">
+                            <img className="h-full w-full" src={fileURLs.length >= 2 ? API_URL + fileURLs[2] : 'template_image.jpg'} />
+                        </div>
+                        <div className="c-img-4">
+                            <img className="h-full w-full" src={fileURLs.length >= 3 ? API_URL + fileURLs[3] : 'template_image.jpg'} />
+                        </div>
                     </div>
                     <div className="flex w-[40%] flex-col justify-evenly justify-self-end pl-3">
                         <p className="text-[125%]">Price: £{props.Price} {props.TypeOfPurchase == "Rental" ? "p/m" : ""}</p>

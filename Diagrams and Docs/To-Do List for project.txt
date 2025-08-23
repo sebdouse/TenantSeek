@@ -1,7 +1,5 @@
 To-Do List for project:
 	
-	-	Hash Passwords on the server-side
-	-	Upload & Receiving Images for listings
 	-	Populate Landing Page info containers with text
 
 	?- 	Implement Caching of the results of common fetches for efficiency
