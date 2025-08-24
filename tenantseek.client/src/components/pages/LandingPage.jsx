@@ -44,7 +44,7 @@ function LandingPage() {
                     }
                 });
             },
-            { threshold: 0.2 }
+            { threshold: 0.1 }
         );
         boxRefs.forEach(ref => {
             if (ref.current) observer.observe(ref.current);
@@ -93,18 +93,39 @@ function LandingPage() {
         </div>
             <div className="flex max-h-[calc(2.5*100vh)] min-h-screen flex-col items-center justify-evenly bg-[#f0f0f0]">
                 <div className="information-box-1" ref={boxRefs[0]}>
+                    <h1 className="-translate-y-15 absolute right-[15%] top-0 font-semibold text-[2rem]">Who are we?</h1>
+                    <img src="wave2.png" className="absolute right-5 h-[130%]"></img>
                     <div className="information-box-container" style={{ left: '10%' }} >
-
+                        <h2 className="h-full w-full">
+                            We are a team of landlords still in practise around the Kent area who noticed a problem.
+                            When Landlord and Tenant relationships are low, landlords property gets less respect costing money in damages,
+                            and tenants get slower and less support. Its a lose-lose! <br />
+                            So we are stepping in to help foster existing relationships with your respective tenant/landlord and
+                            also prevent working with problematic people in the first place by holding them accountable.
+                        </h2>
                     </div>
                 </div>
                 <div className="information-box-2" ref={boxRefs[1]}>
+                    <h1 className="-translate-y-15 absolute left-[5%] top-0 font-semibold text-[2rem]">What can we do for you?</h1>
+                    <img src="handshake2.png" className="absolute left-10 h-[120%]"></img>
                     <div className="information-box-container" style={{ right: '10%' }}>
-
+                        <h2 className="h-full w-full">
+                            We are creating a community of people where people can celebrate their landlord or tenants great behaviour, driving up reputation and business
+                            for good landlords, gathering trust and benefits for good tenants, whilst airing out the bad tenants and landlords before they can become a problem.
+                            This is all through our anonymous review system. And with your talents and candor noticed, you can promote your listings with our community here too,
+                            ensuring that you know whoever you work with is a part of a community who cares for each other. 
+                        </h2>
                     </div>
                 </div>
                 <div className="information-box-1" ref={boxRefs[2]}>
-                    <div className="information-box-container" style={{ left: '10%' }} >
-
+                    <h1 className="-translate-y-15 absolute right-[12%] top-0 font-semibold text-[2rem]">Don't believe us?</h1>
+                    <img src="detective.png" className="right-15 absolute h-[110%]"></img>
+                    <div className="information-box-container !p-7" style={{ left: '10%' }} >
+                        <h2 className="h-full w-full">
+                            Great! Your caution is exactly what makes a good tenant or landlord! <br/>
+                            Just check the <a href="https://www.trustpilot.com/review/tenantseek.co.uk">reviews</a> that we have (thats right, we get reviewed too) from others that have now joined our community,
+                            or <a href="mailto:bestlandlordever@tenantseek.co.uk">talk to our agents</a> and we will answer any questions you might have. Or just give it a try! It's free after all, with no hidden fees.
+                        </h2>
                     </div>
                 </div>
             </div>

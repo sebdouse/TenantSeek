@@ -8,14 +8,13 @@ import PopUp from '../PopUp';
 function LandlordDashboard({ userID }) {
     document.body.style.overflow = "scroll"
 
-    const [listingsData, setListingsData] = useState([])
-    const [reviewsData, setReviewsData] = useState([])
-    const [filedata, setFileData] = useState([])
-    const [loadingListings, setLoadingListings] = useState(true);
-    const [loadingReviews, setLoadingReviews] = useState(true);
-    const [errors, setErrors] = useState("")
-    const [togglePop, setTogglePop] = useState(false)
-    const [name, setName] = useState("")
+    const [listingsData, setListingsData] = useState([]) //store fetched listings
+    const [reviewsData, setReviewsData] = useState([]) //store fetched reviews
+    const [loadingListings, setLoadingListings] = useState(true); //tracking when listings fetches are finished
+    const [loadingReviews, setLoadingReviews] = useState(true); //tracking when listings fetches are finished
+    const [errors, setErrors] = useState("") //Catches network errors in real time
+    const [togglePop, setTogglePop] = useState(false) //Tracks when the pop-up is enabled vs disabled
+    const [name, setName] = useState("") //UNNECESSARY USE OF USE STATE// Stores username received from userId to display
     const API_URL = import.meta.env.VITE_API_URL
     
 

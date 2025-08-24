@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TenantSeek.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9f0cc35d28f9c69c3b1f1fd45b3f50e69ff4154")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6aef4fdc85b19db950dd5572502e03170aed6de0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TenantSeek.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TenantSeek.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

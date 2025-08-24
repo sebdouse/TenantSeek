@@ -18,7 +18,7 @@ function InfoCard({ id, role, about, rating, desc}) {
                 <div className="flex h-full w-full items-center justify-start rounded">
                     <div className="block h-full w-full">
                         <p className="flex">Description</p>
-                        <div className="reverse-shadow flex max-h-[12vh] min-h-[10vh] w-[40vw] rounded border border-black bg-[#fcf8ff] p-2">
+                        <div className="flex max-h-[12vh] min-h-[10vh] w-[40vw] rounded border border-black bg-[#966fd1] p-2 shadow-inner">
                             <p>{desc}</p>
                         </div>
                     </div>

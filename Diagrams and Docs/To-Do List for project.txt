@@ -1,6 +1,4 @@
 To-Do List for project:
 	
-	-	Populate Landing Page info containers with text
-
 	?- 	Implement Caching of the results of common fetches for efficiency
-	?-	Implement a listings image collage pop-up
+	

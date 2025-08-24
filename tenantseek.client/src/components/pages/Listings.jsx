@@ -1,6 +1,7 @@
 ﻿import React, { useEffect, useRef, useState } from 'react';
 import '../../App.css';
 import ListingsCard from '../ListingsCard.jsx'
+import Gallery from '../Gallery.jsx'
 
 
 function Listings() {
@@ -12,6 +13,8 @@ function Listings() {
     const [errors, setErrors] = useState("")
     const [sendQuery, setSendQuery] = useState(false)
     const [loading, setLoading] = useState(true)
+    const [galleryFiles, setGalleryFiles] = useState([])
+    const [toggleGallery, setToggleGallery] = useState(false)
     const API_URL = import.meta.env.VITE_API_URL;
     document.body.style.overflow = "hidden"
 
@@ -107,6 +110,10 @@ function Listings() {
                             Description={r.Description}
                             Images={r.Images}
                             TypeOfPurchase={r.TypeOfPurchase}
+                            galleryFiles={galleryFiles}
+                            setGalleryFiles={setGalleryFiles}
+                            setToggleGallery={setToggleGallery}
+                            toggleGallery={toggleGallery}
                         />
                     ))
                 }
@@ -116,6 +123,7 @@ function Listings() {
 
     return (
         <>
+            <Gallery files={galleryFiles} toggleGallery={toggleGallery} setToggleGallery={setToggleGallery} />
             <div className="mt-25 min-h-screen text-[#fcf8ff]">
                 <div className="relative flex min-h-screen flex-col items-center justify-center">
                     <div className="reviews-animate absolute top-[4vh] z-30 block" ref={listingRef}>

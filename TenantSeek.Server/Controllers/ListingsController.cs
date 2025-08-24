@@ -167,7 +167,7 @@ namespace TenantSeek.Server.Controllers
             }
             catch (Exception e)
             {
-                throw e;
+                return BadRequest(e);
                
             }
 

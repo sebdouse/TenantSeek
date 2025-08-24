@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\listingscard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\listingscard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\popup.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\popup.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\pages\\listings.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\pages\\listings.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\pages\\landlorddashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\pages\\landlorddashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\gallery.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\gallery.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\listingscard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\listingscard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\pages\\landingpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\pages\\landingpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.server\\models\\listings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|solutionrelative:tenantseek.server\\models\\listings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\infocard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\infocard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.server\\models\\images.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|solutionrelative:tenantseek.server\\models\\images.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.server\\controllers\\listingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|solutionrelative:tenantseek.server\\controllers\\listingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.server\\models\\images.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|solutionrelative:tenantseek.server\\models\\images.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.client\\src\\components\\pages\\landlorddashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EBC521EC-F33E-68D8-01E5-6D68B1C73D51}|tenantseek.client\\tenantseek.client.esproj|solutionrelative:tenantseek.client\\src\\components\\pages\\landlorddashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.server\\models\\listings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|solutionrelative:tenantseek.server\\models\\listings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5963739-6028-4845-91C8-52A0C36E6694}|TenantSeek.Server\\TenantSeek.Server.csproj|c:\\users\\sebas\\documents\\github\\tenantseek\\tenantseek.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,41 +58,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ListingsController.cs",
-              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\Controllers\\ListingsController.cs",
-              "RelativeDocumentMoniker": "TenantSeek.Server\\Controllers\\ListingsController.cs",
-              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\Controllers\\ListingsController.cs",
-              "RelativeToolTip": "TenantSeek.Server\\Controllers\\ListingsController.cs",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAiwKoAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T13:10:09.623Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PopUp.jsx",
-              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\PopUp.jsx",
-              "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\PopUp.jsx",
-              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\PopUp.jsx",
-              "RelativeToolTip": "tenantseek.client\\src\\components\\PopUp.jsx",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-23T14:16:59.188Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "App.css",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.css",
               "RelativeDocumentMoniker": "tenantseek.client\\src\\App.css",
               "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\App.css",
               "RelativeToolTip": "tenantseek.client\\src\\App.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwCcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-08-23T13:41:45.401Z",
               "IsPinned": true,
@@ -92,15 +72,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "Listings.jsx",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\Listings.jsx",
+              "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\pages\\Listings.jsx",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\Listings.jsx",
+              "RelativeToolTip": "tenantseek.client\\src\\components\\pages\\Listings.jsx",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAQwH0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-23T12:53:34.79Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ListingsCard.jsx",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\ListingsCard.jsx",
               "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\ListingsCard.jsx",
               "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\ListingsCard.jsx",
               "RelativeToolTip": "tenantseek.client\\src\\components\\ListingsCard.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwDcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-08-23T12:49:43.22Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Gallery.jsx",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\Gallery.jsx",
+              "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\Gallery.jsx",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\Gallery.jsx",
+              "RelativeToolTip": "tenantseek.client\\src\\components\\Gallery.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-24T18:04:34.043Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -115,6 +123,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "InfoCard.jsx",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\InfoCard.jsx",
+              "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\InfoCard.jsx",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\InfoCard.jsx",
+              "RelativeToolTip": "tenantseek.client\\src\\components\\InfoCard.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-24T14:11:15.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LandingPage.jsx",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\LandingPage.jsx",
+              "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\pages\\LandingPage.jsx",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\LandingPage.jsx",
+              "RelativeToolTip": "tenantseek.client\\src\\components\\pages\\LandingPage.jsx",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAMwHsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-08-24T08:38:18.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListingsController.cs",
+              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\Controllers\\ListingsController.cs",
+              "RelativeDocumentMoniker": "TenantSeek.Server\\Controllers\\ListingsController.cs",
+              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\Controllers\\ListingsController.cs",
+              "RelativeToolTip": "TenantSeek.Server\\Controllers\\ListingsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T13:10:09.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Listings.cs",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\Models\\Listings.cs",
               "RelativeDocumentMoniker": "TenantSeek.Server\\Models\\Listings.cs",
@@ -122,12 +169,11 @@
               "RelativeToolTip": "TenantSeek.Server\\Models\\Listings.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAuwBYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T14:23:08.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-23T14:23:08.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Images.cs",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\Models\\Images.cs",
               "RelativeDocumentMoniker": "TenantSeek.Server\\Models\\Images.cs",
@@ -140,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\TenantSeek.Server\\Program.cs",
               "RelativeDocumentMoniker": "TenantSeek.Server\\Program.cs",
@@ -152,28 +198,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "LandlordDashboard.jsx",
               "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\LandlordDashboard.jsx",
               "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\pages\\LandlordDashboard.jsx",
               "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\LandlordDashboard.jsx",
               "RelativeToolTip": "tenantseek.client\\src\\components\\pages\\LandlordDashboard.jsx",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAHAAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-08-23T13:24:44.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Listings.jsx",
-              "DocumentMoniker": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\Listings.jsx",
-              "RelativeDocumentMoniker": "tenantseek.client\\src\\components\\pages\\Listings.jsx",
-              "ToolTip": "C:\\Users\\Sebas\\Documents\\GitHub\\TenantSeek\\tenantseek.client\\src\\components\\pages\\Listings.jsx",
-              "RelativeToolTip": "tenantseek.client\\src\\components\\pages\\Listings.jsx",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAAAGwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-08-23T12:53:34.79Z",
               "EditorCaption": ""
             }
           ]
